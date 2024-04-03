@@ -33,10 +33,19 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% if post.date_start %}
+        <p class="post__date archive__item-excerpt" itemprop="description">
+            <time datetime="{{ post.date_start | date: "%Y.%m" }}">{{ post.date_start | date: "%Y.%m" }}</time>
+            {% if post.date_end %}
+                - <time datetime="{{ post.date_end | date: "%Y.%m" }}">{{ post.date_end | date: "%Y.%m" }}</time>
+            {% else %}
+                - Present
+            {% endif %}
+            {% if post.venue %}
+                , {{ post.type }}, {{ post.venue }}, {{ post.location }}
+            {% endif %}
+        </p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
     </li>
  </article>
 </div>

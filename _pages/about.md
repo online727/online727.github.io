@@ -1,49 +1,63 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "个人主页"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+我目前是[南京大学](https://www.nju.edu.cn/)本科三年级学生，于 2021 年入学，专业为金融学。
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+目前的职业倾向为量化研究 & 金融科技。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-
-Site-wide configuration
+个人自述
 ------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+个人参与过量化实习、数模比赛、因子挖掘项目等，有丰富建模和处理金融数据的经验，在私募公司进行过期货量化 CTA 策略、股票因子挖掘的相关实习工作，了解金融衍生品，有一定股票交易经验（美股）。
 
-Create content & metadata
+代码能力较强，熟悉基本数据结构和算法，熟悉 Python 常用数据处理、机器学习库并了解其代码复杂度，可进行熟练的数据处理、分析、建模工作，并有一定代码优化能力。
+
+同时，有一定机器学习、深度学习经历，熟悉 Pytorch。熟悉 CNN、RNN、GAN 的基本架构，并具有将其应用于股票研究的经验。
+
+实习经历
 ------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+**浙江量衍投资管理有限公司**     中低频期货量化研究员     2023 年 6 月 - 2023 年 8 月
 
-**Markdown generator**
+* 期货数据处理、指数编制、数据库更新等；
+* 期货策略回测及业绩归因，研究单品种多空收益、跨期套利，多品种套利、收益相关性，以聚类实现品种分类，以
+rolling volatility 为品种赋权，研究不同周期、类型的策略在不同经济周期的时间效益及策略相关性；
+* CTA 动量策略择时，基于 MACD 和 ATR 指标构建市场波段划分体系，并由此构建市场趋势指标判断市场风格，构建⾼低点识别、市场择时模型。提升策略平均表现。
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
 
-How to edit your site's GitHub repository
+研究经历
 ------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+* VGC-GAN : A Multi-Graph Convolution Adversarial Network for Stock Price Prediction
+  * 以 VMD-GA 算法分解股价序列，以 Pearson、Spearman、DTW 刻画股票相关性；
+  * 以 Multi-Graph Convolution Net 、GRU 作为 Generator，同时刻画股票的时序依赖和空间依赖；
+  * 以 Convolution Net 作为 Discriminator，构建 WGAN ⽹络，进⾏对抗性训练，实现股价预测。
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
-
-For more info
+项目经历
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+* 九坤投资量化交易联赛 Top 30
+  * LightGBM 动量模型 - 交易逻辑 - 止损逻辑 - 持仓控制 - 择时
+* 衍盛私募证券投资基⾦管理有限公司 因子挖掘项目
+  * 编写因子回测框架 - 以 IC 和 20 组分层收益为标准挖掘因子
+* Fama-French 5 因⼦模型在中国市场的研究实证
+  * 于中国市场复现 FF5 多因⼦模型 - 以 PCA 合成情绪指数 Sent 修正 FF5
+* 2023 年中国⼤学⽣数学建模竞赛 C 题 省三
+  * 聚类、多项式回归、整数 - 非线性混合规划、ARIMA、遗传算法
+* 2023 年美国⼤学⽣数学建模竞赛 C 题 M 奖
+  * 特征挖掘、ARIMA、BP 神经⽹络、多元回归、Fisher 线性判别法、层次聚类
+
+联系方式
+------
+* 邮箱：zhhohoh27@outlook.com
+* 电话：19551998168
+* 微信：zhhohoh815
+
+<!-- 更多信息
+------
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+
+<!-- Getting started
+====== -->

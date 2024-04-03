@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "个人简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,39 +9,48 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<p align="center">
+  <a href="PDF链接地址">CV</a> | <a href="成绩单链接地址">成绩单</a>
+</p>
+
+教育经历
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* <div style="display: flex; justify-content: space-between;">
+    <span>南京⼤学</span>
+    <span>⾦融学</span>
+    <span>本科</span>
+    <span>2021.09 - 2025.06</span>
+    </div>
+  * GPA：4.58 / 5.0
+  * 相关课程：Python 程序设计、数据结构与算法分析、机器学习、概率论与数理统计、常微分⽅程、随机过程、⾏为⾦融学、证券投资学、⾦融⼯程学、固定收益证券
 
-Work experience
+技能及荣誉
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **编程语⾔**：Python、Pytorch、C、MATLAB、R、LaTeX、Git
+* **技能证书**：WorldQuant Alphathon Gold Certificate；WorldQuant Consultant；Coursera Machine Learning Certificate
+* **语⾔成绩**：IELTS 7；CET - 6 - 612
+* **奖学⾦**：国家励志奖学⾦ * 2，恒芳奖学⾦
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+实习经历
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
 
-Publications
+研究经历
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+项目经历
+======
+  <ul>{% for post in site.portfolio reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+
+<!-- Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
@@ -61,4 +70,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->

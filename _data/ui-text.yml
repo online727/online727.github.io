@@ -1,5 +1,48 @@
 # User interface text and labels
 
+# Chinese Default
+zh-CN: &DEFAULT_ZH_CN
+  page                       : "页面"
+  pagination_previous        : "上一页"
+  pagination_next            : "下一页"
+  breadcrumb_home_label      : "首页"
+  breadcrumb_separator       : "/"
+  toc_label                  : "本页"
+  ext_link_label             : "链接"
+  less_than                  : "少于"
+  minute_read                : "分钟"
+  share_on_label             : "分享至"
+  meta_label                 :
+  tags_label                 : "标签："
+  categories_label           : "类别："
+  date_label                 : "时间："
+  comments_label             : "发表评论"
+  comments_title             : "评论"
+  more_label                 : "了解更多"
+  related_label              : "你可能也喜欢"
+  follow_label               : "关注："
+  feed_label                 : "订阅"
+  powered_by                 : "技术支持由"
+  website_label              : "网址"
+  email_label                : "电子邮件"
+  recent_posts               : "最近文章"
+  undefined_wpm              : "_config.yml 文件中未定义参数 words_per_minute"
+  comment_form_info          : "您的电子邮件地址不会被公开。标有*的字段是必填项"
+  comment_form_comment_label : "评论"
+  comment_form_md_info       : "支持 Markdown 语法。"
+  comment_form_name_label    : "姓名"
+  comment_form_email_label   : "电子邮件地址"
+  comment_form_website_label : "网址（可选）"
+  comment_btn_submit         : "提交评论"
+  comment_btn_submitted      : "已提交"
+  comment_success_msg        : "感谢您的评论！一旦通过审核，它将显示在网站上。"
+  comment_error_msg          : "对不起，提交时发生错误。请确保所有必填字段都已完成，然后再试一次。"
+  loading_label              : "加载中..."
+zh-TW:
+  <<: *DEFAULT_ZH_CN
+zh-HK:
+  <<: *DEFAULT_ZH_CN
+
 # English (default)
 # -----------------
 en: &DEFAULT_EN
