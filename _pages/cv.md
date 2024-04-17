@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <p align="center">
-  <a href="../files/赵浩翰-南京大学-金融-2025届.pdf">CV</a> | <a href="../files/赵浩翰-南京大学-金融-2025届-成绩单.pdf">成绩单</a>
+  <a href="../files/cv.pdf">CV</a> | <a href="../files/school report.pdf">成绩单</a>
 </p>
 
 教育经历
