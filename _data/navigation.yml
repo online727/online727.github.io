@@ -32,3 +32,6 @@ main:
 
   - title: "简历"
     url: /cv/
+  
+  - title: "笔记"
+    url: /year-archive/
