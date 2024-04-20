@@ -7,7 +7,7 @@ tags:
   - Tree Models
 ---
 
-本文将会列出所学过的各类树模型：
+本文将会列出所学过的各类树模型
 
 * [Decision Tree]("https://github.com/online727/online727.github.io/tree/master/files/1 - Basic Decision Tree Model.pdf")
 * [GBDT]("https://github.com/online727/online727.github.io/tree/master/files/2 - Gradient-Boosting Decision Tree.pdf")
