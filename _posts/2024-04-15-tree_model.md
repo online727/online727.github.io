@@ -9,7 +9,7 @@ tags:
 
 本文将会列出所学过的各类树模型
 
-* [Decision Tree](https://github.com/online727/online727.github.io/blob/master/files/Tree/1%20-%20Basic%20Decision%20Tree%20Model.pdf)
-* [GBDT]("https://github.com/online727/online727.github.io/blob/master/files/Tree/2%20-%20Gradient-Boosting%20Decision%20Tree.pdf")
-* [XGBoost](https://github.com/online727/online727.github.io/blob/master/Tree/files/3%20-%20XGBoost.pdf)
-* [LightGbm]()
+* [Decision Tree](https://github.com/online727/online727.github.io/blob/master/files/Tree/BasicDecisionTree.pdf)
+* [GBDT](https://github.com/online727/online727.github.io/blob/master/files/Tree/GradientBoostingDecisionTree.pdf)
+* [XGBoost](https://github.com/online727/online727.github.io/blob/master/files/Tree/XGBoost.pdf)
+* [LightGbm](https://github.com/online727/online727.github.io/blob/master/files/Tree/LightGBM.pdf)
