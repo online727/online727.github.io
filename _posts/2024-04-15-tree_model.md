@@ -1,7 +1,7 @@
 ---
 title: '树模型'
 date: 2024-04-15
-permalink: /posts/2012/08/blog-post-1/
+permalink: /posts/2024/04/tree_models/
 tags:
   - ML
   - Tree Models
@@ -9,6 +9,7 @@ tags:
 
 本文将会列出所学过的各类树模型
 
-* [Decision Tree]("https://github.com/online727/online727.github.io/tree/master/files/1 - Basic Decision Tree Model.pdf")
-* [GBDT]("https://github.com/online727/online727.github.io/tree/master/files/2 - Gradient-Boosting Decision Tree.pdf")
-* [XGBoost]("https://github.com/online727/online727.github.io/tree/master/files/3 - XGBoost.pdf")
+* [Decision Tree](https://github.com/online727/online727.github.io/blob/master/files/1%20-%20Basic%20Decision%20Tree%20Model.pdf)
+* [GBDT]("https://github.com/online727/online727.github.io/blob/master/files/2%20-%20Gradient-Boosting%20Decision%20Tree.pdf")
+* [XGBoost](https://github.com/online727/online727.github.io/blob/master/files/3%20-%20XGBoost.pdf)
+* [LightGbm]()
