@@ -1,7 +1,7 @@
 ---
 title: '树模型'
 date: 2024-04-15
-permalink: /posts/2024/04/tree_models/
+permalink: /posts/tree_models/
 tags:
   - ML
   - Tree Models

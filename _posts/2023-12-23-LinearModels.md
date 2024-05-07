@@ -1,7 +1,7 @@
 ---
 title: '线性模型'
 date: 2023-12-25
-permalink: /posts/2023/12/LinearModels/
+permalink: /posts/LinearModels/
 tags:
   - ML
   - Linear Models
