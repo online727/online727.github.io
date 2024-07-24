@@ -1,7 +1,7 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://online727.github.io
 
-languageCode: bn
-title: "John's Blog"
+languageCode: en
+title: "Haohan's Blog"
 
 # Use Hugo modules to add theme
 module:
@@ -23,13 +23,18 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "John's Blog"
+    title: "Haohan's Blog"
     weight: 1
+  cn:
+    languageCode: cn
+    languageName: 简体中文
+    title: "赵浩翰 - 博客"
+    weight: 2
   bn:
     languageCode: bn
     languageName: বাংলা
     title: জনের ব্লগ
-    weight: 2
+    weight: 3
 # default language for the content
 defaultContentLanguage: en
 
@@ -68,7 +73,7 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/online727/online727.github.io
   # Default branch of your Git repo
   gitBranch: main
 
@@ -144,7 +149,7 @@ params:
 
     # Enable Analytics
     analytics:
-      enabled: true
+      enabled: false
       services:
         # Google Analytics
         google:
