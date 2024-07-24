@@ -1,17 +1,17 @@
 # Copyright Notice
-copyright: © 2020 Copyright.
+copyright: © 2020 版权.
 
 # A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
-disclaimer: "This site is built on hugo and github pages and uses the hugo-toha theme.
-The site is used for personal blogging, all content is owned by me and does not constitute any relevant advice, if you have any questions, please contact me!"
+disclaimer: "本网站基于 hugo 和 github pages 搭建，使用 hugo-toha 主题。
+网站用于个人博客，所有内容均为本人所有，且不构成任何相关建议，如有问题，可与本人联系。"
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal blog of Haohan ZHao.
+description: 浩翰的个人博客
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
-- name: Docs
+- name: 文档
   url: https://toha-guides.netlify.app/posts/
   # specify whether to hide the menu item from top navbar or not.
   hideFromNavbar: false
@@ -21,8 +21,8 @@ customMenus:
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Haohan's Blog
+  title: 赵浩翰 - 博客
   type: website
-  description: Portfolio and personal blog of Haohan Zhao.
+  description: 浩翰的个人博客
   image: images/author/john.png
   url: https://online727.github.io
