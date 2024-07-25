@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Education
+  name: 教育
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
@@ -10,11 +10,11 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Bachelor of Finance
+- name: 金融学学士
   icon: fa-microscope
   timeframe: 2021-2025
   institution:
-    name: Nanjing University
+    name: 南京大学
     url: "https://www.nju.edu.cn/"
     logo: /images/sections/education/njdx.png
     # Can optionally show a different logo for dark theme
@@ -31,13 +31,13 @@ degrees:
     - name: Python
       achieved: 96
       outOf: 100
-    - name: Data Structures and Algorithm
+    - name: 数据结构与算法分析
       achieved: 94
       outOf: 100
-    - name: Probability and Statistics
+    - name: 概率论与数理统计
       achieved: 96
       outOf: 100
-    - name: Financial Engineering
+    - name: 金融工程学
       achieved: 92
       outOf: 100
   # publications: #(optional)
