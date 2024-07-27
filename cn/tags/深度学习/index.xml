@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>深度学习 on 赵浩翰 - 博客</title><link>https://online727.github.io/cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link><description>Recent content in 深度学习 on 赵浩翰 - 博客</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Sat, 27 Jul 2024 17:06:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/cn/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>第二章 预备知识</title><link>https://online727.github.io/cn/posts/dltorch/ch2/</link><pubDate>Sat, 27 Jul 2024 17:06:25 +0800</pubDate><guid>https://online727.github.io/cn/posts/dltorch/ch2/</guid><description>接下来一段时间，我想自学深度学习，使用的教材为 动手学深度学习 (Pytorch 版)，该书有线上网址，且提供配套代码和相关 Python 包，详情可参见 动手学深度学习。
+第一章内容，介绍了深度学习的相关背景和应用场景，以及深度学习领域常见的术语和名词，有一定机器学习经验的人或许已比较熟悉，故不再赘述，我们直接从第二章开始。
+1. Tensor 操作和数据预处理 深度学习中的数据以张量 (tensor) 形式存储，支持 GPU 计算和 autograd 自动微分。
+张量的创建、变形、运算 (按元素 / 矩阵)、广播机制、索引、切片等均与 numpy.ndarray 类似。
+节省内存： Y = X + Y 不是原地操作，即：id(Y = X + Y) != id(Y)，会分配新的内存。 使用 Y[:] = X + Y 或 Y += X 进行原地操作以避免不必要的内存分配。 Tensor 可以与其他 Python 对象互相转换，如 tensor.numpy()。大小为 1 的张量可以转化为 Python 标量，使用 tensor.item() 或 float(tensor) 等。
+数据需要经过预处理，如填充 nan，标准化等，可以借用其他 Python 包处理后再转化为 tensor。
+2. 线性代数 标量，以小写字母 $x,y,z$ 等表示。 向量，以粗体小写字母 $\bold{x,y,z}$ 表示，向量的维度 (形状) 代表元素个数 (向量长度)，可以使用 len(x), x.</description></item></channel></rss>
