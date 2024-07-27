@@ -10,7 +10,7 @@ menu:
     weight: 71
 author:
   name: 赵浩翰
-  image: /images/author/zhh.jpg
+  image: /images/author/zhh.png
 tags:
 - 深度学习
 - Pytorch

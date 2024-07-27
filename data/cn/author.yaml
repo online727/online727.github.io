@@ -3,7 +3,7 @@ name: "赵浩翰"
 nickname: "浩翰"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "你好！我是"
-image: "images/author/zhh.jpg"
+image: "images/author/zhh.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "zhhohoh27@outlook.com"

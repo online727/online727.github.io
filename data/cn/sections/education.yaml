@@ -16,7 +16,7 @@ degrees:
   institution:
     name: 南京大学
     url: "https://www.nju.edu.cn/"
-    logo: /images/sections/education/njdx.png
+    logo: /images/sections/education/NJU.png
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/tech_college.png
   grade: #(optional)

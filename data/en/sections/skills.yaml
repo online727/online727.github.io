@@ -31,7 +31,7 @@ skills:
 #   url: "https://www.docker.com/"
 
 - name: Python
-  logo: /images/sections/skills/python.jpg
+  logo: /images/sections/skills/python.png
   summary: "Proficient in data analyzing (numpy, pandas, polars), model constructing (statsmodels, sklearn, pytorch)."
   url: "https://www.python.org/"
 
