@@ -44,7 +44,7 @@ experiences:
     location: 远程
     logo: /images/sections/experiences/xingye.png
     # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company2.jpg
+    darkLogo: /images/sections/experiences/xingye-dark.png
     overview: 中国领先的证券公司，提供全面的金融服务
   positions:
   - designation: 中高频股票量化研究员
@@ -61,7 +61,7 @@ experiences:
     location: 上海
     logo: /images/sections/experiences/liangyan.png
     # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company3.jpg
+    darkLogo: /images/sections/experiences/liangyan-dark.png
     overview: 私募基金，主营期货 CTA 策略
   positions:
   - designation: 中低频期货量化研究员

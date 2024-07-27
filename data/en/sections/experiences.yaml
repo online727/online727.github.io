@@ -44,7 +44,7 @@ experiences:
     location: Remote
     logo: /images/sections/experiences/xingye.png
     # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company2.jpg
+    darkLogo: /images/sections/experiences/xingye-dark.png
     overview: A leading securities company in China, providing comprehensive financial services.
   positions:
   - designation: Stocks Quant Researcher
@@ -61,7 +61,7 @@ experiences:
     location: Shanghai
     logo: /images/sections/experiences/liangyan.png
     # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/experiences/company3.jpg
+    darkLogo: /images/sections/experiences/liangyan-dark.png
     overview: Private Fund Management Company, focus on CTA strategy.
   positions:
   - designation: CTA Quant Researcher
