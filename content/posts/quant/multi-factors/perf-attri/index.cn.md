@@ -38,6 +38,8 @@ BHB 模型将投资组合的超额收益率分解为 **配置收益、选股收�
 
 {{< img src="/posts/quant/multi-factors/perf-attri/images/BHB.png" align="center" title="BNB">}}
 
+{{< vs >}}
+
 从行业配置的角度而言，假设 $w_{i}^{P}, w_{i}^{B}$ 分别表示投资组合和基准组合中行业 $i$ 的权重，$r_{i}^{P}, r_{i}^{B}$ 分别表示投资组合和基准组合中行业 $i$ 的收益率，那么投资组合的收益率 $R^{P}$ 和基准组合的收益率 $R^{B}$ 就可以表示为：
 $$
 \begin{align*}
@@ -78,6 +80,8 @@ BF 模型是 BHB 模型的改进版，增加了基准收益 $R^{B}$ 对配置收
 
 {{< img src="/posts/quant/multi-factors/perf-attri/images/BF.png" align="center" title="BF">}}
 
+{{< vs >}}
+
 BF 模型在配置效应部分的计算引入了基准收益 $R^{B}$，新的配置效应可以表示为：
 $$
 AR_{BF}=\sum_{i=1}^{I}(w_{i}^{P} - w_{i}^{B})(r_{i}^{B} - R^{B})
@@ -105,7 +109,7 @@ $$
 最后，BF 模型就将投资组合的超额收益 $R^{A}$ 分解到了对行业的配置效应 $AR$ 和行业内部的选股效应 $SR$ 两个部分：
 $$
 \begin{equation*}
-    R^{A}_{BF} = AR_{BF} + SR_{BF} = \sum\limits_{i=1}^{I}(w_{i}^{P} - w_{i}^{B})(r_{i}^{B} - R^{B}) + \sum\limits_{i=1}^{I}w_{i}^{P}(r_{i}^{P} - r_{i}^{B})
+    R^A_{BF} = AR_{BF} + SR_{BF} = \sum\limits_{i=1}^{I}(w_i^P - w_i^B)(r_i^B - R^B) + \sum\limits_{i=1}^{I}w_i^P(r_i^P - r_i^B)
 \end{equation*}
 $$
 
