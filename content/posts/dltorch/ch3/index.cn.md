@@ -12,7 +12,7 @@ author:
   name: 赵浩翰
   image: /images/author/zhh.png
 tags:
-- 深度学习
+- DeepLearning
 - Pytorch
 - LinearRegression
 - SoftMax
@@ -498,6 +498,8 @@ def predict_ch3(net, test_iter, n=6):
 
 predict_ch3(net, test_iter)
 ```
+
+预测结果如下所示：
 
 {{< img src="/posts/dltorch/ch3/images/softmax1.jpg" align="center" title="simple softmax">}}
 

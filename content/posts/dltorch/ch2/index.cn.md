@@ -12,7 +12,7 @@ author:
   name: 赵浩翰
   image: /images/author/zhh.png
 tags:
-- 深度学习
+- DeepLearning
 - Pytorch
 math: true
 ---
