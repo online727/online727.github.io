@@ -7,7 +7,7 @@
 ```
 [outputs]
 home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;]
-```&lt;/p></description></item><item><title>简单测试</title><link>https://online727.github.io/cn/notes/example/testnotes/simpletest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/cn/notes/example/testnotes/simpletest/</guid><description>&lt;!-- String Type -->
+```&lt;/p></description></item><item><title>离散随机变量</title><link>https://online727.github.io/cn/notes/probability/random-variable/discrete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/cn/notes/probability/random-variable/discrete/</guid><description/></item><item><title>简单测试</title><link>https://online727.github.io/cn/notes/example/testnotes/simpletest/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/cn/notes/example/testnotes/simpletest/</guid><description>&lt;!-- String Type -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Strings&lt;/span>&lt;/h5>

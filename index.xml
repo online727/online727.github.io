@@ -135,7 +135,30 @@ width="500"
 height="200"
 style="float: right;"
 >
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.&lt;/p></description></item><item><title>Introduction</title><link>https://online727.github.io/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program -->
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.&lt;/p></description></item><item><title>Discrete Random Variable</title><link>https://online727.github.io/notes/probability/random-variable/discrete/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/probability/random-variable/discrete/</guid><description>&lt;!-- Bernoulli -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Bernoulli&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>If a random variable $X$ can only take $0$ or $1$ as values, and its probability distribution is given by:
+$$
+P(X=0)=p, P(X=1)=q, p+q=1
+$$&lt;/p>
+&lt;p>such a random variable $X$ is said to follow &lt;strong>Bernoulli distribution&lt;/strong>, denoted as $X\sim B(1,p)$ or $X\sim b(1,p)$&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Binomial -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Binomial&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>If a random variable&amp;rsquo;s probability distribution is given by:
+$$
+P(X=k)=C_{n}^{k}p^{k}q^{n-k},k=0,1,2,\cdots,n,\quad (pq&amp;gt;0, p+q=1)
+$$&lt;/p>
+&lt;p>such a random variable $X$ is said to follow &lt;strong>Binomial distribution&lt;/strong>, denoted as $X\sim B(n,p)$.&lt;/p></description></item><item><title>Introduction</title><link>https://online727.github.io/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Hello World&lt;/span>&lt;/h5>
