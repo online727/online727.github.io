@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MLP on 赵浩翰 - 博客</title><link>https://online727.github.io/cn/tags/mlp/</link><description>Recent content in MLP on 赵浩翰 - 博客</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Tue, 13 Aug 2024 22:02:00 +0800</lastBuildDate><atom:link href="https://online727.github.io/cn/tags/mlp/index.xml" rel="self" type="application/rss+xml"/><item><title>第四章 多层感知机</title><link>https://online727.github.io/cn/posts/dltorch/ch4/</link><pubDate>Tue, 13 Aug 2024 22:02:00 +0800</pubDate><guid>https://online727.github.io/cn/posts/dltorch/ch4/</guid><description>&lt;p>&lt;strong>多层感知机&lt;/strong> 是最简单的深度网络，由多层神经元组成，每一层与它的上一层相连，从中接收输入；同时每一层也与它的下一层相连，影响当前层的神经元。本章还涉及许多基本的概念介绍，包括过拟合、欠拟合、模型选择、数值稳定性、参数初始化以及权重衰减和暂退法等正则化技术。&lt;/p>
+&lt;h2 id="1-多层感知机">1. 多层感知机&lt;/h2>
+&lt;h3 id="11-简介">1.1 简介&lt;/h3>
+&lt;p>在第三章中涉及了线性回归和 softmax 回归，并在线性的背景下使用 Pytorch 进行了简单实现，这两个简单的回归基于第三章中介绍的 &lt;strong>仿射变换&lt;/strong>，即一个带有偏置项的线性变换，但是，在实际生活中，&lt;strong>线性&lt;/strong> 是一个非常强的假设。&lt;/p>
+&lt;p>我们或许有理由说一个人的年收入与其贷款是否违约具有负向线性相关性，但对于第三章章讨论的图像分类问题，就很难认为某个像素点的强度与其类别之间的关系仍是线性的。因此，我们选择构建一个深度神经网络，通过 &lt;strong>隐藏层&lt;/strong> 的计算为我们的数据构建一种 &lt;strong>表示&lt;/strong>，这种表示可以考虑特征之间的交互作用，在表示上，我们再建立一个线性模型用于预测可能是合适的。&lt;/p>
+&lt;p>通过在网络中加入一个或多个隐藏层，配合激活函数，我们便可以克服线性模型的限制，使其能处理更普遍的函数关系。最简单的方式就是将许多全连接层堆叠在一起，每一层都输出到其上面的层，直到生成最后的输出。我们可以把前 $L-1$ 层看作表示，最后一层看作线性预测器。这种架构通常称为 &lt;strong>多层感知机&lt;/strong> (multilayer perceptron)，通常缩写为 &lt;code>MLP&lt;/code>。一般多层感知机的架构如下图所示：&lt;/p>
+&lt;img src="https://online727.github.io/posts/dltorch/ch4/images/MLP.png"
+alt="多层感知机"
+class="center"
+>
+&lt;div style="margin-top: rem;">&lt;/div>
+&lt;p>这个多层感知机有 4 个输入，3 个输出，其隐藏层包含 5 个隐藏单元。输入层不涉及任何计算，因此，这个多层感知机中的层数为 2。由于隐藏层和输出层都是全连接的，每个输入都会影响隐藏层中的每个神经元，而隐藏层中的每个神经元又会影响输出层中的每个神经元。&lt;/p>
+&lt;p>以 $\bold{X}\in\mathbb{R}^{n\times d}$ 来表示 $n$ 个样本的小批量，其中每个样本具有 $d$ 个输入特征。对于具有 $h$ 个隐藏单元的单隐藏层多层感知机，用 $\bold{H}\in\mathbb{R}^{n\times h}$ 表示隐藏层的输出，称为 &lt;strong>隐藏表示&lt;/strong> (hidden representations)，&lt;strong>隐藏层变量&lt;/strong> (hidden-layer variable) 或 &lt;strong>隐藏变量&lt;/strong> (hidden variable)。对于全连接的隐藏层和输出层，有隐藏层权重 $\bold{W}^{(1)}\in\mathbb{R}^{d\times h}$ 和隐藏层偏置 $\bold{b}^{(1)}\in\mathbb{R}^{1\times h}$ 以及输出层权重 $\bold{W}^{(2)}\in\mathbb{R}^{h\times q}$ 和输出层偏置 $\bold{b}^{(2)}\in\mathbb{R}^{1\times 1}$。由此便可以计算单隐藏层多层感知机的输出：
+$$
+\begin{align*}
+\bold{H} &amp;amp;= \bold{XW}^{(1)} + \bold{b}^{(1)} \cr
+\bold{O} &amp;amp;= \bold{HW}^{(2)} + \bold{b}^{(2)} \cr
+\end{align*}
+$$&lt;/p></description></item></channel></rss>

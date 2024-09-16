@@ -1,7 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SoftMax on 赵浩翰 - 博客</title><link>https://online727.github.io/cn/tags/softmax/</link><description>Recent content in SoftMax on 赵浩翰 - 博客</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Sun, 28 Jul 2024 21:57:00 +0800</lastBuildDate><atom:link href="https://online727.github.io/cn/tags/softmax/index.xml" rel="self" type="application/rss+xml"/><item><title>第三章 线性神经网络</title><link>https://online727.github.io/cn/posts/dltorch/ch3/</link><pubDate>Sun, 28 Jul 2024 21:57:00 +0800</pubDate><guid>https://online727.github.io/cn/posts/dltorch/ch3/</guid><description>1. 线性回归 1.1 线性回归的基本元素 1.1.1 线性模型 线性回归，假设自变量 $\bold{x}$ 和因变量 $y$ 之间为线性关系，其中可能包含噪声，但噪声是比较正常的，如噪声服从正态分布。
-给定一个样本 $\bold{x}\in\mathbb{R}^{d}$，即具有 $d$ 个特征，将所有系数记为 $\bold{w}\in\mathbb{R}^{d}$，线性回归的基本形式为： $$ \hat{y} = \bold{w}^{T}\bold{x} + b $$
-矩阵形式下，$\bold{X}\in\mathbb{R}^{n\times d}$ 为所有样本的特征，此时线性回归表示为： $$ \hat{\bold{y}} = \bold{Xw} + b $$
-给定训练数据集 $\bold{X}$ 和对应标签 $\bold{y}$，线性回归的目标就是找到一组权重向量 $\bold{w}$ 和偏置 $b$，使得所有样本的预测误差尽可能小。
-1.1.2 损失函数 损失函数，用以度量上面提到的 “预测误差”，通常选择一个非负数作为损失，且该损失越小越好。回归问题中，最常用的损失函数为 平方误差，当样本 $i$ 的预测值为 $\hat{y}^{(i)}$，相应真实标签为 $y^{(i)}$ 时，平方误差定义为： $$ l^{(i)}(\bold{w}, b) = \frac{1}{2}\left(\hat{y}^{(i)} - y^{(i)} \right)^{2} $$
-$\frac{1}{2}$ 是为了损失函数求导时常数系数为 1,不会有本质差别。
-那么，为了度量模型在整个训练集上的表现，就需要计算在整个训练集 $n$ 个样本上的损失均值 (等价于求和)： $$ L(\bold{w}, b) = \frac{1}{n}\sum_{i=1}^{n}l^{(i)}(\bold{w},b) = \frac{1}{n}\sum_{i=1}^{n}\frac{1}{2}\left(\bold{w}^{T}\bold{x}^{(i)} + b - y^{(i)} \right)^{2} $$</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SoftMax on 赵浩翰 - 博客</title><link>https://online727.github.io/cn/tags/softmax/</link><description>Recent content in SoftMax on 赵浩翰 - 博客</description><generator>Hugo -- gohugo.io</generator><language>cn</language><lastBuildDate>Sun, 28 Jul 2024 21:57:00 +0800</lastBuildDate><atom:link href="https://online727.github.io/cn/tags/softmax/index.xml" rel="self" type="application/rss+xml"/><item><title>第三章 线性神经网络</title><link>https://online727.github.io/cn/posts/dltorch/ch3/</link><pubDate>Sun, 28 Jul 2024 21:57:00 +0800</pubDate><guid>https://online727.github.io/cn/posts/dltorch/ch3/</guid><description>&lt;h2 id="1-线性回归">1. 线性回归&lt;/h2>
+&lt;h3 id="11-线性回归的基本元素">1.1 线性回归的基本元素&lt;/h3>
+&lt;h4 id="111-线性模型">1.1.1 线性模型&lt;/h4>
+&lt;p>线性回归，假设自变量 $\bold{x}$ 和因变量 $y$ 之间为线性关系，其中可能包含噪声，但噪声是比较正常的，如噪声服从正态分布。&lt;/p>
+&lt;p>给定一个样本 $\bold{x}\in\mathbb{R}^{d}$，即具有 $d$ 个特征，将所有系数记为 $\bold{w}\in\mathbb{R}^{d}$，线性回归的基本形式为：
+$$
+\hat{y} = \bold{w}^{T}\bold{x} + b
+$$&lt;/p>
+&lt;p>矩阵形式下，$\bold{X}\in\mathbb{R}^{n\times d}$ 为所有样本的特征，此时线性回归表示为：
+$$
+\hat{\bold{y}} = \bold{Xw} + b
+$$&lt;/p>
+&lt;p>给定训练数据集 $\bold{X}$ 和对应标签 $\bold{y}$，线性回归的目标就是找到一组权重向量 $\bold{w}$ 和偏置 $b$，使得所有样本的预测误差尽可能小。&lt;/p>
+&lt;h4 id="112-损失函数">1.1.2 损失函数&lt;/h4>
+&lt;p>损失函数，用以度量上面提到的 “预测误差”，通常选择一个非负数作为损失，且该损失越小越好。回归问题中，最常用的损失函数为 &lt;strong>平方误差&lt;/strong>，当样本 $i$ 的预测值为 $\hat{y}^{(i)}$，相应真实标签为 $y^{(i)}$ 时，平方误差定义为：
+$$
+l^{(i)}(\bold{w}, b) = \frac{1}{2}\left(\hat{y}^{(i)} - y^{(i)} \right)^{2}
+$$&lt;/p>
+&lt;p>$\frac{1}{2}$ 是为了损失函数求导时常数系数为 1,不会有本质差别。&lt;/p>
+&lt;p>那么，为了度量模型在整个训练集上的表现，就需要计算在整个训练集 $n$ 个样本上的损失均值 (等价于求和)：
+$$
+L(\bold{w}, b) = \frac{1}{n}\sum_{i=1}^{n}l^{(i)}(\bold{w},b) = \frac{1}{n}\sum_{i=1}^{n}\frac{1}{2}\left(\bold{w}^{T}\bold{x}^{(i)} + b - y^{(i)} \right)^{2}
+$$&lt;/p></description></item></channel></rss>

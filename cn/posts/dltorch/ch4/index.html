@@ -1,0 +1,124 @@
+<!doctype html><html lang=cn><head><title>第四章 多层感知机</title>
+<meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel=stylesheet href=/application.9b9342080d6c469bf44748bc72b47ec075a124fe0c6e6ff0f13d20c757e4d5a9.css integrity="sha256-m5NCCA1sRpv0R0i8crR+wHWhJP4Mbm/w8T0gx1fk1ak="><link rel=icon type=image/png href=/images/site/favicon_hu8414222332455362891.png><meta property="og:url" content="https://online727.github.io/cn/posts/dltorch/ch4/"><meta property="og:site_name" content="赵浩翰 - 博客"><meta property="og:title" content="第四章 多层感知机"><meta property="og:description" content="动手深度学习 (Pytorch) 第四章"><meta property="og:locale" content="cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-08-13T22:02:00+08:00"><meta property="article:modified_time" content="2024-08-13T22:02:00+08:00"><meta property="article:tag" content="DeepLearning"><meta property="article:tag" content="Pytorch"><meta property="article:tag" content="MLP"><meta property="article:tag" content="Normalization"><meta name=twitter:card content="summary"><meta name=twitter:title content="第四章 多层感知机"><meta name=twitter:description content="动手深度学习 (Pytorch) 第四章"><meta name=description content="动手深度学习 (Pytorch) 第四章"><script>theme=localStorage.getItem("darkmode:color-scheme")||"system",theme=="system"&&(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?theme="dark":theme="light"),document.documentElement.setAttribute("data-theme",theme)</script></head><body class="type-posts kind-page" data-bs-spy=scroll data-bs-target=#TableOfContents data-bs-offset=80><div class="container-fluid bg-secondary wrapper"><nav class="navbar navbar-expand-xl top-navbar shadow" id=top-navbar><div class=container><button class="navbar-toggler navbar-light" id=sidebar-toggler type=button>
+<i data-feather=sidebar></i>
+</button>
+<a class=navbar-brand href=/cn><img src=/images/site/main-logo_hu10708377409321002774.png id=logo alt=Logo>
+赵浩翰 - 博客</a>
+<button class="navbar-toggler navbar-light" id=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#top-nav-items aria-label=menu>
+<i data-feather=menu></i></button><div class="collapse navbar-collapse dynamic-navbar" id=top-nav-items><ul class="nav navbar-nav ms-auto"><li class=nav-item><a class=nav-link href=/cn#home>主页</a></li><li class=nav-item><a class=nav-link href=/cn#about>关于</a></li><li class=nav-item><a class=nav-link href=/cn#skills>技能</a></li><li class=nav-item><a class=nav-link href=/cn#experiences>经历</a></li><li class=nav-item><a class=nav-link href=/cn#education>教育</a></li><div id=top-navbar-divider></div><li class=nav-item><a class=nav-link id=blog-link href=/cn/posts>博文</a></li><li class=nav-item><a class=nav-link id=note-link href=/cn/notes>笔记</a></li><li class=nav-item><a class=nav-link href=https://toha-guides.netlify.app/posts/>文档</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# id=languageSelector role=button data-bs-toggle=dropdown aria-haspopup=true aria-expanded=false><span class="flag-icon flag-icon-cn"></span>
+简体中文</a><div class=dropdown-menu aria-labelledby=languageSelector><a class="dropdown-item nav-link languages-item" href=/posts/dltorch/ch4><span class="flag-icon flag-icon-gb"></span>
+English
+</a><a class="dropdown-item nav-link languages-item" href=/cn/posts/dltorch/ch4><span class="flag-icon flag-icon-cn"></span>
+简体中文
+</a><a class="dropdown-item nav-link languages-item" href=/bn/posts/dltorch/ch4><span class="flag-icon flag-icon-bd"></span>
+বাংলা</a></div></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href=# id=themeSelector role=button data-bs-toggle=dropdown aria-haspopup=true aria-expanded=false><img id=navbar-theme-icon-svg class=theme-icon src=/icons/moon-svgrepo-com.svg width=20 alt="Dark Theme"></a><div id=themeMenu class="dropdown-menu dropdown-menu-icons-only" aria-labelledby=themeSelector><a class="dropdown-item nav-link" href=# data-scheme=light><img class=theme-icon src=/icons/sun-svgrepo-com.svg width=20 alt="Light Theme">
+</a><a class="dropdown-item nav-link" href=# data-scheme=dark><img class=theme-icon src=/icons/moon-svgrepo-com.svg width=20 alt="Dark Theme">
+</a><a class="dropdown-item nav-link" href=# data-scheme=system><img class=theme-icon src=/icons/computer-svgrepo-com.svg width=20 alt="System Theme"></a></div></li></ul></div></div><img src=/images/site/main-logo_hu10708377409321002774.png class=d-none id=main-logo alt=Logo>
+<img src=/images/site/inverted-logo_hu8414222332455362891.png class=d-none id=inverted-logo alt="Inverted Logo"></nav><section class=sidebar-section id=sidebar-section><div class=sidebar-holder><div class=sidebar id=sidebar><form class=mx-auto method=get action=/cn/search><input type=text name=keyword placeholder=搜索 data-search id=search-box></form><div class=sidebar-tree><ul class=tree id=tree><li id=list-heading><a href=/cn/posts/ data-filter=all>博文</a></li><div class=subtree><li><i data-feather=plus-circle></i><a class=list-link href=/cn/posts/quant/> 量化</a><ul><li><i data-feather=plus-circle></i><a class=list-link href=/cn/posts/quant/multi-factors/> 多因子模型</a><ul><li><a class=list-link href=/cn/posts/quant/multi-factors/perf-attri/ title=多因子绩效归因>多因子绩效归因</a></li></ul></li></ul></li><li><i data-feather=minus-circle></i><a class="active list-link" href=/cn/posts/dltorch/> 深度学习 (Pytorch 版)</a><ul class=active><li><a class=list-link href=/cn/posts/dltorch/ch2/ title="第二章 预备知识">第二章 预备知识</a></li><li><a class=list-link href=/cn/posts/dltorch/ch3/ title="第三章 线性神经网络">第三章 线性神经网络</a></li><li><a class="active list-link" href=/cn/posts/dltorch/ch4/ title="第四章 多层感知机">第四章 多层感知机</a></li></ul></li></div></ul></div></div></div></section><section class=content-section id=content-section><div class=content><div class="container p-0 read-area"><div class="hero-area col-sm-12" id=hero-area style=background-image:url(/images/default-hero.jpg)></div><div class=page-content><div class="author-profile ms-auto align-self-lg-center"><img class=rounded-circle src=/images/author/zhh_hu2277249603137709564.png alt="Author Image"><h5 class=author-name>Haohan Zhao</h5><p class=text-muted>Tuesday, August 13, 2024 | 2 minutes</p></div><div class=title><h1>第四章 多层感知机</h1></div><div class=tags><ul style=padding-left:0><li class=rounded><a href=/cn/tags/deeplearning/ class="btn btn-sm btn-info">DeepLearning</a></li><li class=rounded><a href=/cn/tags/pytorch/ class="btn btn-sm btn-info">Pytorch</a></li><li class=rounded><a href=/cn/tags/mlp/ class="btn btn-sm btn-info">MLP</a></li><li class=rounded><a href=/cn/tags/normalization/ class="btn btn-sm btn-info">Normalization</a></li></ul></div><div class=post-content id=post-content><p><strong>多层感知机</strong> 是最简单的深度网络，由多层神经元组成，每一层与它的上一层相连，从中接收输入；同时每一层也与它的下一层相连，影响当前层的神经元。本章还涉及许多基本的概念介绍，包括过拟合、欠拟合、模型选择、数值稳定性、参数初始化以及权重衰减和暂退法等正则化技术。</p><h2 id=1-多层感知机>1. 多层感知机</h2><h3 id=11-简介>1.1 简介</h3><p>在第三章中涉及了线性回归和 softmax 回归，并在线性的背景下使用 Pytorch 进行了简单实现，这两个简单的回归基于第三章中介绍的 <strong>仿射变换</strong>，即一个带有偏置项的线性变换，但是，在实际生活中，<strong>线性</strong> 是一个非常强的假设。</p><p>我们或许有理由说一个人的年收入与其贷款是否违约具有负向线性相关性，但对于第三章章讨论的图像分类问题，就很难认为某个像素点的强度与其类别之间的关系仍是线性的。因此，我们选择构建一个深度神经网络，通过 <strong>隐藏层</strong> 的计算为我们的数据构建一种 <strong>表示</strong>，这种表示可以考虑特征之间的交互作用，在表示上，我们再建立一个线性模型用于预测可能是合适的。</p><p>通过在网络中加入一个或多个隐藏层，配合激活函数，我们便可以克服线性模型的限制，使其能处理更普遍的函数关系。最简单的方式就是将许多全连接层堆叠在一起，每一层都输出到其上面的层，直到生成最后的输出。我们可以把前 $L-1$ 层看作表示，最后一层看作线性预测器。这种架构通常称为 <strong>多层感知机</strong> (multilayer perceptron)，通常缩写为 <code>MLP</code>。一般多层感知机的架构如下图所示：</p><img src=/posts/dltorch/ch4/images/MLP.png alt=多层感知机 class=center><div style=margin-top:rem></div><p>这个多层感知机有 4 个输入，3 个输出，其隐藏层包含 5 个隐藏单元。输入层不涉及任何计算，因此，这个多层感知机中的层数为 2。由于隐藏层和输出层都是全连接的，每个输入都会影响隐藏层中的每个神经元，而隐藏层中的每个神经元又会影响输出层中的每个神经元。</p><p>以 $\bold{X}\in\mathbb{R}^{n\times d}$ 来表示 $n$ 个样本的小批量，其中每个样本具有 $d$ 个输入特征。对于具有 $h$ 个隐藏单元的单隐藏层多层感知机，用 $\bold{H}\in\mathbb{R}^{n\times h}$ 表示隐藏层的输出，称为 <strong>隐藏表示</strong> (hidden representations)，<strong>隐藏层变量</strong> (hidden-layer variable) 或 <strong>隐藏变量</strong> (hidden variable)。对于全连接的隐藏层和输出层，有隐藏层权重 $\bold{W}^{(1)}\in\mathbb{R}^{d\times h}$ 和隐藏层偏置 $\bold{b}^{(1)}\in\mathbb{R}^{1\times h}$ 以及输出层权重 $\bold{W}^{(2)}\in\mathbb{R}^{h\times q}$ 和输出层偏置 $\bold{b}^{(2)}\in\mathbb{R}^{1\times 1}$。由此便可以计算单隐藏层多层感知机的输出：
+$$
+\begin{align*}
+\bold{H} &= \bold{XW}^{(1)} + \bold{b}^{(1)} \cr
+\bold{O} &= \bold{HW}^{(2)} + \bold{b}^{(2)} \cr
+\end{align*}
+$$</p><p>但是，上述网络只是两次线性仿射变换，本质上仍是仿射变换，并未比一次线性变换带来更多的信息，我们可以证明，任意与如上网络类似的多层感知机，只需合并隐藏层，就可以产生等价的单层模型。</p><p>那么，如何使多层感知机发挥更强的功能呢？答案是：在仿射变换之后对每个隐藏单元应用 <strong>非线性的激活函数</strong> (activation function) $\sigma$，激活函数的输出 $\sigma(\cdot)$ 称为 <strong>激活值</strong> (activation)。此时，多层感知机的计算方式为：
+$$
+\begin{align*}
+\bold{H} &= \sigma(\bold{XW}^{(1)} + \bold{b}^{(1)}) \cr
+\bold{O} &= \bold{HW}^{(2)} + \bold{b}^{(2)} \cr
+\end{align*}
+$$</p><h3 id=12-激活函数>1.2 激活函数</h3><p><strong>激活函数</strong> (activation function) 过计算加权和并加上偏置来确定神经元是否应该被激活，将输入信号转换为输出的可微运算，大多数激活函数都是非线性的。下面简要介绍一些常见的激活函数。</p><h4 id=121-relu>1.2.1 ReLU</h4><p><strong>修正线性单元</strong> (Rectified linear unit，ReLU)，实现简单，同时在各种预测任务中表现良好。ReLU 提供了一种非常简单的非线性变换，对于给定元素，ReLU 函数被定义为该元素与 0 的最大值：
+$$
+ReLU(x) = \max(x, 0)
+$$</p><p>即：ReLU 函数通过将相应的活性值设为 0，仅保留正元素并丢弃所有负元素。该函数是分段线性的。当输入为负时，ReLU 函数的导数为 0，而当输入为正时，ReLU 函数的导数为 1。注意，当输入值精确等于 0 时，ReLU 函数不可导。此时，我们默认使用左侧的导数，即当输入为 0 时导数为 0。</p><div class="alert success"><span><i data-feather=check-circle></i></span>
+<span><strong>PyTorch 中可以设置输入为负时，ReLU 函数的导数值。且由于 ReLU 函数倒数为常数，其可以有效缓解梯度消失、梯度爆炸问题。</strong></span></div><p>ReLU 函数的诸多变体，如 <strong>参数化 ReLU</strong> (parameterized ReLU, pReLU) 也经常使用。
+$$
+pReLU(x) = \max(0, x) + \alpha\min(0, x)
+$$</p><h4 id=122-sigmoid>1.2.2 sigmoid</h4><p>sigmoid 通常称为 <strong>挤压函数</strong> (squashing function)，它将范围在 $(-\infty,\infty)$ 上的任意输入压缩到区间 $(0,1)$ 上的某个值：
+$$
+sigmoid(x)=\frac{1}{1+\exp(-x)}
+$$</p><p>sigmoid 函数是一个平滑的、可微的阈值单元近似。当我们想要将输出视作二元分类问题的概率时，sigmoid 被广泛用作输出单元上的激活函数，它可以视为 softmax 的特例。</p><div class="alert success"><span><i data-feather=check-circle></i></span>
+<span><strong>sigmoid 在隐藏层中已经较少使用，它在大部分时候被更简单、更容易训练的ReLU所取代。</strong></span></div><p>sigmoid 函数的导数为：
+$$
+\frac{d}{dx}sigmoid(x)=\frac{\exp(-x)}{(1+\exp(-x))^2}=sigmoid(x)(1-sigmoid(x))
+$$</p><h4 id=123-tanh>1.2.3 tanh</h4><p><strong>tanh (双曲正切)</strong> 函数也可以将范围在 $(-\infty,\infty)$ 上的任意输入压缩到区间 $(0,1)$ 上的某个值：
+$$
+tanh(x) = \frac{1-\exp(-2x)}{1+\exp(-2x)}
+$$</p><div class="alert success"><span><i data-feather=check-circle></i></span>
+<span><strong>sigmoid 和 tanh 在输入接近于 0 时都接近于线性变换，但 tanh 函数的斜率更大。</strong></span></div><p>tanh 函数的导数为：
+$$
+\frac{d}{dx}tanh(x)=1-tanh^{2}(x)
+$$</p><h2 id=2-实现一个多层感知机>2. 实现一个多层感知机</h2><p>仍使用手写数字数据集 Fashion-MNIST。</p><h3 id=21-从零实现>2.1 从零实现</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> torch
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> torch <span style=color:#f92672>import</span> nn
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> d2l <span style=color:#f92672>import</span> torch <span style=color:#66d9ef>as</span> d2l
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 读取数据</span>
+</span></span><span style=display:flex><span>batch_size <span style=color:#f92672>=</span> <span style=color:#ae81ff>256</span>
+</span></span><span style=display:flex><span>train_iter, test_iter <span style=color:#f92672>=</span> d2l<span style=color:#f92672>.</span>load_data_fashion_mnist(batch_size)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 隐藏层个数一般设置为 2 的幂次，因为计算机的内存分配使用字节，这样方便计算。</span>
+</span></span><span style=display:flex><span>num_inputs, num_outputs, num_hiddens <span style=color:#f92672>=</span> <span style=color:#ae81ff>784</span>, <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>256</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>W1 <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>Parameter(
+</span></span><span style=display:flex><span>    torch<span style=color:#f92672>.</span>randn(
+</span></span><span style=display:flex><span>        num_inputs, num_hiddens, requires_grad<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>    ) <span style=color:#f92672>*</span> <span style=color:#ae81ff>0.01</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>b1 <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>Parameter(torch<span style=color:#f92672>.</span>zeros(num_hiddens, requires_grad<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>))
+</span></span><span style=display:flex><span>W2 <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>Parameter(
+</span></span><span style=display:flex><span>    torch<span style=color:#f92672>.</span>randn(
+</span></span><span style=display:flex><span>        num_hiddens, num_outputs, requires_grad<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>    ) <span style=color:#f92672>*</span> <span style=color:#ae81ff>0.01</span>
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>b2 <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>Parameter(torch<span style=color:#f92672>.</span>zeros(num_outputs, requires_grad<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>params <span style=color:#f92672>=</span> [W1, b1, W2, b2]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 激活函数</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>relu</span>(X):
+</span></span><span style=display:flex><span>    a <span style=color:#f92672>=</span> torch<span style=color:#f92672>.</span>zeros_like(X)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> torch<span style=color:#f92672>.</span>max(X, a)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 模型</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>net</span>(X):
+</span></span><span style=display:flex><span>    X <span style=color:#f92672>=</span> X<span style=color:#f92672>.</span>reshape((<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>, num_inputs))
+</span></span><span style=display:flex><span>    H <span style=color:#f92672>=</span> relu(X <span style=color:#f92672>@</span> W1 <span style=color:#f92672>+</span> b1)  <span style=color:#75715e># 这里“@”代表矩阵乘法</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> (H <span style=color:#f92672>@</span> W2 <span style=color:#f92672>+</span> b2)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 损失函数</span>
+</span></span><span style=display:flex><span>loss <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>CrossEntropyLoss(reduction<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;none&#39;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 训练</span>
+</span></span><span style=display:flex><span>num_epochs, lr <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>0.1</span>
+</span></span><span style=display:flex><span>updater <span style=color:#f92672>=</span> torch<span style=color:#f92672>.</span>optim<span style=color:#f92672>.</span>SGD(params, lr<span style=color:#f92672>=</span>lr)
+</span></span><span style=display:flex><span>d2l<span style=color:#f92672>.</span>train_ch3(net, train_iter, test_iter, loss, num_epochs, updater)
+</span></span></code></pre></div><h3 id=22-简介实现>2.2 简介实现</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># 模型</span>
+</span></span><span style=display:flex><span>net <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>Sequential(
+</span></span><span style=display:flex><span>    nn<span style=color:#f92672>.</span>Flatten(),
+</span></span><span style=display:flex><span>    nn<span style=color:#f92672>.</span>Linear(<span style=color:#ae81ff>784</span>, <span style=color:#ae81ff>256</span>),
+</span></span><span style=display:flex><span>    nn<span style=color:#f92672>.</span>ReLU(),
+</span></span><span style=display:flex><span>    nn<span style=color:#f92672>.</span>Linear(<span style=color:#ae81ff>256</span>, <span style=color:#ae81ff>10</span>)
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>init_weights</span>(m):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> type(m) <span style=color:#f92672>==</span> nn<span style=color:#f92672>.</span>Linear:
+</span></span><span style=display:flex><span>        nn<span style=color:#f92672>.</span>init<span style=color:#f92672>.</span>normal_(m<span style=color:#f92672>.</span>weight, std<span style=color:#f92672>=</span><span style=color:#ae81ff>0.01</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>net<span style=color:#f92672>.</span>apply(init_weights)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># 训练</span>
+</span></span><span style=display:flex><span>batch_size, lr, num_epochs <span style=color:#f92672>=</span> <span style=color:#ae81ff>256</span>, <span style=color:#ae81ff>0.1</span>, <span style=color:#ae81ff>10</span>
+</span></span><span style=display:flex><span>loss <span style=color:#f92672>=</span> nn<span style=color:#f92672>.</span>CrossEntropyLoss(reduction<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;none&#39;</span>)
+</span></span><span style=display:flex><span>trainer <span style=color:#f92672>=</span> torch<span style=color:#f92672>.</span>optim<span style=color:#f92672>.</span>SGD(net<span style=color:#f92672>.</span>parameters(), lr<span style=color:#f92672>=</span>lr)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>train_iter, test_iter <span style=color:#f92672>=</span> d2l<span style=color:#f92672>.</span>load_data_fashion_mnist(batch_size)
+</span></span><span style=display:flex><span>d2l<span style=color:#f92672>.</span>train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
+</span></span></code></pre></div></div><div class="row ps-3 pe-3"><div class="col-md-6 share-buttons"><strong>分享:</strong>
+<a class="btn icon-button bg-facebook" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fonline727.github.io%2fcn%2fposts%2fdltorch%2fch4%2f" target=_blank><i class="fab fa-facebook"></i>
+</a><a class="btn icon-button bg-twitter" href="https://twitter.com/share?url=https%3a%2f%2fonline727.github.io%2fcn%2fposts%2fdltorch%2fch4%2f&text=%e7%ac%ac%e5%9b%9b%e7%ab%a0%20%e5%a4%9a%e5%b1%82%e6%84%9f%e7%9f%a5%e6%9c%ba&via=%e8%b5%b5%e6%b5%a9%e7%bf%b0%20-%20%e5%8d%9a%e5%ae%a2" target=_blank><i class="fab fa-twitter"></i>
+</a><a class="btn icon-button bg-reddit" href="https://reddit.com/submit?url=https%3a%2f%2fonline727.github.io%2fcn%2fposts%2fdltorch%2fch4%2f&title=%e7%ac%ac%e5%9b%9b%e7%ab%a0%20%e5%a4%9a%e5%b1%82%e6%84%9f%e7%9f%a5%e6%9c%ba" target=_blank><i class="fab fa-reddit"></i>
+</a><a class="btn icon-button bg-linkedin" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fonline727.github.io%2fcn%2fposts%2fdltorch%2fch4%2f&title=%e7%ac%ac%e5%9b%9b%e7%ab%a0%20%e5%a4%9a%e5%b1%82%e6%84%9f%e7%9f%a5%e6%9c%ba" target=_blank><i class="fab fa-linkedin"></i>
+</a><a class="btn icon-button bg-whatsapp" href="https://api.whatsapp.com/send?text=%e7%ac%ac%e5%9b%9b%e7%ab%a0%20%e5%a4%9a%e5%b1%82%e6%84%9f%e7%9f%a5%e6%9c%ba https%3a%2f%2fonline727.github.io%2fcn%2fposts%2fdltorch%2fch4%2f" target=_blank><i class="fab fa-whatsapp"></i>
+</a><a class="btn icon-button" href="mailto:?subject=%e7%ac%ac%e5%9b%9b%e7%ab%a0%20%e5%a4%9a%e5%b1%82%e6%84%9f%e7%9f%a5%e6%9c%ba&body=https%3a%2f%2fonline727.github.io%2fcn%2fposts%2fdltorch%2fch4%2f" target=_blank><i class="fas fa-envelope-open-text"></i></a></div><div class="col-md-6 btn-improve-page"><a href=https://github.com/online727/online727.github.io/edit/main/content/posts/dltorch/ch4/index.cn.md title=改善此页面 target=_blank rel=noopener><i class="fas fa-code-branch"></i>
+改善此页面</a></div></div><hr><div class="row next-prev-navigator"><div class="col-md-6 previous-article"><a href=/cn/posts/dltorch/ch3/ title="第三章 线性神经网络" class="btn filled-button"><div><i class="fas fa-chevron-circle-left"></i> 上一篇</div><div class=next-prev-text>第三章 线性神经网络</div></a></div></div><hr></div></div></div><a id=scroll-to-top class=btn type=button data-bs-toggle=tooltip data-bs-placement=left title="Scroll to top"><i class="fas fa-chevron-circle-up"></i></a></section><section class=toc-section id=toc-section><div class=toc-holder><h5 class="text-center ps-3">目录</h5><hr><div class=toc><nav id=TableOfContents><ul><li><a href=#1-多层感知机>1. 多层感知机</a><ul><li><a href=#11-简介>1.1 简介</a></li><li><a href=#12-激活函数>1.2 激活函数</a><ul><li><a href=#121-relu>1.2.1 ReLU</a></li><li><a href=#122-sigmoid>1.2.2 sigmoid</a></li><li><a href=#123-tanh>1.2.3 tanh</a></li></ul></li></ul></li><li><a href=#2-实现一个多层感知机>2. 实现一个多层感知机</a><ul><li><a href=#21-从零实现>2.1 从零实现</a></li><li><a href=#22-简介实现>2.2 简介实现</a></li></ul></li></ul></nav></div></div></section></div><footer id=footer class="container-fluid text-center align-content-center footer pb-2"><div class="container pt-5"><div class="row text-start"><div class="col-md-4 col-sm-12"><h5>导航</h5><ul><li class=nav-item><a class=smooth-scroll href=https://online727.github.io/cn/#about>关于</a></li><li class=nav-item><a class=smooth-scroll href=https://online727.github.io/cn/#skills>技能</a></li><li class=nav-item><a class=smooth-scroll href=https://online727.github.io/cn/#experiences>经历</a></li><li class=nav-item><a class=smooth-scroll href=https://online727.github.io/cn/#education>教育</a></li></ul></div><div class="col-md-4 col-sm-12"><h5>联系方式:</h5><ul><li><a href=mailto:zhhohoh27@outlook.com target=_blank rel=noopener><span><i class="fas fa-envelope"></i></span> <span>zhhohoh27@outlook.com</span></a></li><li><a href=https://github.com/online727 target=_blank rel=noopener><span><i class="fab fa-github"></i></span> <span>online727</span></a></li><li><a href=https://www.linkedin.com/in/haohan-zhao-9a6b24296 target=_blank rel=noopener><span><i class="fab fa-linkedin"></i></span> <span>赵浩翰</span></a></li><li><span><i class="fas fa-phone-alt"></i></span> <span>+8619551998168</span></li></ul></div></div></div><hr><div class=container><p id=disclaimer><strong>免责声明:</strong> 本网站基于 hugo 和 github pages 搭建，使用 hugo-toha 主题。 网站用于个人博客，所有内容均为本人所有，且不构成任何相关建议，如有问题，可与本人联系。</p></div><hr><div class=container><div class="row text-start"><div class=col-md-4><a id=theme href=https://github.com/hugo-toha/toha target=_blank rel=noopener><img src=/images/theme-logo_hu16779671404603505019.png alt="Toha Theme Logo">
+Toha</a></div><div class="col-md-4 text-center">© 2020 版权.</div><div class="col-md-4 text-end"><a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18></a></div></div></div></footer><script src=/application.100f2124055918d37ed55689f8b8cd9378a4ece97b585240e75bfd4894e0fe97.js integrity="sha256-EA8hJAVZGNN+1VaJ+LjNk3ik7Ol7WFJA51v9SJTg/pc=" defer></script></body></html>
