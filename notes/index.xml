@@ -253,7 +253,22 @@ $$&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>Bash Variables</title><link>https://online727.github.io/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/bash/basic/</guid><description>&lt;!-- Variable -->
+&lt;/div></description></item><item><title>Basic Definitions</title><link>https://online727.github.io/notes/quant-greenbook/prob-theory/1-basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/quant-greenbook/prob-theory/1-basic/</guid><description>&lt;!-- Coin Toss Game -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Coin Toss Game&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;h3 id="problem">Problem&lt;/h3>
+&lt;p>Two gamblers are playing a coin toss game. Gambler $A$ has $(n+1)$ fair coins; $B$ has $n$ fair coins. What is the probability that $A$ will have more heads than $B$ if both flip all their coins?&lt;/p>
+&lt;h3 id="solution">Solution&lt;/h3>
+&lt;p>First, let&amp;rsquo;s remove the last coin of $A$, then the number of heads in the first $n$ coins of $A$ and $B$ has three outcomes:&lt;/p></description></item><item><title>Combinatorial Analysis</title><link>https://online727.github.io/notes/quant-greenbook/prob-theory/2-combinatorial/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/quant-greenbook/prob-theory/2-combinatorial/</guid><description>&lt;!-- Poker Hands -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Poker Hands&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;h3 id="problem">Problem&lt;/h3>
+&lt;p>Pocker is a card game in which each player gets a hand of 5 cards. There are 52 cards in a deck. Each has a value and belongs to a suit. There are 13 values, 2,3,4,5,6,7,8,9,10,J,Q,K,A, and four suits, spade, club, heart and diamond.&lt;/p>
+&lt;p>What are the probability of getting hands with four-of-a-kind (four of the five cards with the same value)? Hands with a full house (three cards of one values and two cards another value)? Hands with two pairs?&lt;/p></description></item><item><title>Bash Variables</title><link>https://online727.github.io/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/notes/bash/basic/</guid><description>&lt;!-- Variable -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Variable&lt;/span>&lt;/h5>
