@@ -11,15 +11,15 @@ section:
 designation: Quant Researcher
 # your company information
 company:
-  name: MX Capital
-  url: "https://www.mx-capital.com.cn/"
+  name: WanYan Capital
+  url: "https://www.wanyantech.com/"
 
 # your resume. this file path should be relative to you "static" directory
 # Dreprecated. Use resourceLinks instead.
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: 'I am a fourth year undergraduate student majoring in Finance at Nanjing University. I am very passionate about Quantitative Finance and have extensive quantitative internships including factor mining, CTA, and Crypto. I am familiar with Python, and proficient in ML and DL modeling using sklearn and Pytorch.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
