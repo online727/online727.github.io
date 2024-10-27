@@ -205,5 +205,5 @@ The unit digit of $x^3$ only depends on $a^3$, so $a=1$.
 
 The tenth digit only depends on $30a^2b$, so $b=7$.
 
-Consequently, the last two digits of $x$ should be 71, which has a probability of $1\%$ for integers between 1 and $10^{12}$.
+Consequently, the last two digits of $x$ should be $71$, which has a probability of $1$% for integers between $1$ and $10^{12}$.
 {{< /note >}}
