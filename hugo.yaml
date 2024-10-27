@@ -10,7 +10,7 @@ module:
   mounts:
   - source: static/files
     target: static/files
-  - source: ./node_modules/flag-icon-css/flags
+  - source: ./node_modules/flag-icons/flags
     target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
     target: static/files
@@ -83,10 +83,19 @@ params:
 
   # Configure various features of this theme
   features:
+    # [Deprecated] Enable dark theme
+    # This is a deprecated setting, but has not been removed to maintain backward compatibility
+    # If `theme` is set, the `darkMode` setting will be discarded.
+    # darkMode:
+    #   enable: true
 
-    # Enable dark theme
-    darkMode:
+    # Configure theme color settings
+    theme:
       enable: true
+      services:
+        light: true # enable light theme. default "true"
+        dark: true # enable dark theme. default "true"
+        default: system # can be either light, dark or system. default "system"
 
     # Enable and configure portfolio
     portfolio:
@@ -260,7 +269,11 @@ params:
           # options doc: https://github.com/sampotts/plyr#options
           # fullscreen: true
     
-        # Enable reading time support in post cards and in post pages
+    # Enables copy code button
+    copyCodeButton:
+      enable: true
+
+    # Enable reading time support in post cards and in post pages
     readingTime:
       enable: false
     
