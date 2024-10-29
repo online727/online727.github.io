@@ -20,7 +20,7 @@ experiences:
     # company overview
     overview: A well known Private Fund Management Company.
   positions:
-  - designation: Stock Index Future Quant Researcher
+  - designation: Stock Index Future Quantitative Researcher
     start: Aug 2024
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Aug 2024
@@ -28,6 +28,24 @@ experiences:
     responsibilities:
     - Analyze the basis and spread of Chinese stock index futures, mainly IM.
     - Focus on time-series forecasting of spreads across contracts.
+
+- company:
+    name: WorldQuant.
+    url: "https://www.worldquant.com/"
+    location: Nanjing
+    logo: /images/sections/experiences/worldquant_white.jpg
+    # Can optionally show a different logo for dark theme
+    darkLogo: /images/sections/experiences/worldquant_dark.jpg
+    # company overview
+    overview: A well known hedge fund.
+  positions:
+  - designation: Alpha Consultant
+    start: Oct 2023
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Aug 2024
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Implemented a personalized automatic alpha mining pipeline based on fundamentals, orderbook, price/volume data and alternative data in US equity market, submitting over 20 high-performance alphas to production
 
 - company:
     name: MX Capital.
@@ -39,7 +57,7 @@ experiences:
     # company overview
     overview: Private Fund Management Company, focus on stocks and futures strategy.
   positions:
-  - designation: Crypto Quant Researcher
+  - designation: Crypto Quantitative Researcher
     start: Jun 2024
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     end: Aug 2024
@@ -66,7 +84,7 @@ experiences:
     darkLogo: /images/sections/experiences/xingye-dark.png
     overview: A leading securities company in China, providing comprehensive financial services.
   positions:
-  - designation: Stocks Quant Researcher
+  - designation: Stocks Quantitative Researcher
     start: Apr 2024
     end: Jun 2024
     responsibilities:
@@ -83,7 +101,7 @@ experiences:
     darkLogo: /images/sections/experiences/liangyan-dark.png
     overview: Private Fund Management Company, focus on CTA strategy.
   positions:
-  - designation: CTA Quant Researcher
+  - designation: CTA Quantitative Researcher
     start: Jun 2023
     end: Aug 2023
     responsibilities:

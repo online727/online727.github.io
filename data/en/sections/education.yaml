@@ -4,7 +4,7 @@ section:
   id: education
   template: sections/education.html # Use "sections/education-alt.html for alternate template.
   enable: true
-  weight: 4
+  weight: 2
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -21,7 +21,7 @@ degrees:
     darkLogo: /images/sections/education/NJU-dark.png
   grade: #(optional)
     scale: GPA
-    achieved: 4.58
+    achieved: 4.59
     outOf: 5
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
@@ -31,15 +31,27 @@ degrees:
     - name: Python
       achieved: 96
       outOf: 100
-    - name: Data Structures and Algorithm
+    - name: Data Structures and Algorithms
       achieved: 94
       outOf: 100
-    - name: Probability and Statistics
+    - name: Probability Theory
       achieved: 96
+      outOf: 100
+    - name: Random Processes
+      achieved: 94
+      outOf: 100
+    - name: Ordinary Differential Equations
+      achieved: 94
+      outOf: 100
+    - name: Financial Microstructure
+      achieved: 98
       outOf: 100
     - name: Financial Engineering
       achieved: 92
       outOf: 100
+    - name: Machine Learning
+      achieved: A
+      outOf: A
   # publications: #(optional)
   # - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   #   url: "#"

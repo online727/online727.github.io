@@ -61,41 +61,48 @@ socialLinks:
 # For example, you can put link for your resume.
 resourceLinks:
 - title: "My Resume"
-  url: "files/myresume.pdf"
+  url: "files/Resume_Haohan_Zhao.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
 # You can also show a circular bar indicating the level of expertise on a certain skill
 badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
-
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
 - type: soft-skill-indicator
-  name: Quantitive Analysis
+  name: Data Analysis
   percentage: 90
   color: blue
 
 - type: soft-skill-indicator
-  name: Python
+  name: Alpha Research
   percentage: 90
   color: yellow
 
 - type: soft-skill-indicator
-  name: Pytorch
-  percentage: 60
+  name: Quantitative Strategies
+  percentage: 80
   color: orange
+
+- type: soft-skill-indicator
+  name: Python
+  percentage: 90
+  color: green
+
+- type: soft-skill-indicator
+  name: Pytorch
+  percentage: 80
+  color: "#DA70D6"
+
+- type: soft-skill-indicator
+  name: Linux
+  percentage: 80
+  color: "#8B4513"
+
+# - type: certification
+#   name: Artificial Intelligence and Machine Learning
+#   url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
+#   badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
+
+
 
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator

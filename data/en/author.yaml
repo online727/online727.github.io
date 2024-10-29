@@ -1,13 +1,13 @@
 # some information about you
 name: "Haohan Zhao"
-nickname: "Haohan"
+nickname: "Haohan Zhao"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
 image: "images/author/zhh.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "zhhohoh27@outlook.com"
-  phone: "+8619551998168"
+  email: "zhhohoh27@gamil.com"
+  phone: "+86 19551998168"
   github: online727
   linkedin: haohan-zhao-9a6b24296
   # researchgate: Haohan-Zhao

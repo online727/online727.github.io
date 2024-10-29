@@ -1,12 +1,12 @@
 # some information about you
 name: "赵浩翰"
-nickname: "浩翰"
+nickname: "赵浩翰"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "你好！我是"
 image: "images/author/zhh.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "zhhohoh27@outlook.com"
+  email: "zhhohoh27@gamil.com"
   phone: "+8619551998168"
   github: online727
   linkedin: haohan-zhao-9a6b24296
