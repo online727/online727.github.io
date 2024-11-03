@@ -26,8 +26,8 @@ experiences:
     # end: Aug 2024
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Analyze the basis and spread of Chinese stock index futures, mainly IM.
-    - Focus on time-series forecasting of spreads across contracts.
+    - Researched the convergence patterns of IM's basis and spreads using regression, corr, etc.
+    - Mined interpretable, financially meaningful temporal factors from 1-minute IM spot and future data, targeting the 10-minute change rate in future contract spreads, and evaluating alphas using IC, ICIR and Sharpe.
 
 - company:
     name: WorldQuant.
@@ -63,9 +63,9 @@ experiences:
     end: Aug 2024
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Use the APIs of Binance and OKX exchanges to build a data acquisition framework based on Rest and Websocket, and implement a demo trading system.
-    - Using the 1min K-line data of the BTCUSDT perpetual contract and aiming at the return of the next 5 min, mined time-series factors and realized the backtest framework. Based on ICIR and R2 evaluation, a factor library containing 107 low correlation factors was initially constructed.
-    - Based on DEAP, the Fitness class and Genetic Programming algorithm were rewritten, and the evaluation function was constructed based on ICIR, depth of operator tree and correlation, and automated factor mining was carried out on 1min K-line data and its derived features.
+    - Constructed a Genetic Algorithm factor mining pipeline with customized fitness functions and operators to generate over 200 factors based on BTC K-line data. Pushed 107 low correlated alphas to portfolio construction.
+    - Selected crypto pairs to develop an arbitrage strategy with Bollinger. Used rolling training to optimize trading parameters, achieving a post-fee Sharpe of 2.73 and an Annualized Return of 21.32%.
+    - Implemented a Reinforcement Learning pair trading strategy for BTC-ETH using TD3 algorithm. The model generated continuous position signals, achieving a post-fee Sharpe of 3.47 and an Annualized Return of 27.46%.
 
   # - designation: Junior Software Engineer
   #   start: Nov 2017
@@ -88,9 +88,8 @@ experiences:
     start: Apr 2024
     end: Jun 2024
     responsibilities:
-    - Simulate stocks' trading price and volume during pre-market auction stage.
-    - Predicting intraday stock price jumps.
-    - Stock dividends factors, MACD + technical indicators market timing.
+    - Predicted intraday stock price jump using Random Forest, Neural Networks, etc. with liquidity and technical indicators. Constructed a standard framework from jump detection to model performance evaluation.
+    - Stock ex-rights and ex-dividends event alpha; Weekly timing using MACD and technical indicators.
 
 - company:
     name: Liangyan Investment Co.
@@ -105,6 +104,5 @@ experiences:
     start: Jun 2023
     end: Aug 2023
     responsibilities:
-    - Data Analysis.
-    - Performance Attribution.
-    - Mom Strategy.
+    - Attribution of the performance of various commodity futures and strategies.
+    - Constructed a market band division system based on MACD, ATR, etc. to recognize high-low points. Increased the Sharpe by 0.69 (2.46), the Calmar by 0.92 (3.14), and decreased Max Drawdown by 9% (12%).

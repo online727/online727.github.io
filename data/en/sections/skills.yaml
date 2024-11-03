@@ -17,8 +17,8 @@ buttons:
   filter: "basic"
 - name: Language
   filter: "language"
-- name: Container
-  filter: "container"
+- name: CS
+  filter: "cs"
 - name: Others
   filter: "others"
 
@@ -46,21 +46,22 @@ skills:
 
 - name: Python
   logo: /images/sections/skills/python.png
-  summary: "Proficient in data analyzing (numpy, pandas, polars), model constructing (statsmodels, sklearn, pytorch)."
+  summary: "Proficient in data analyzing (numpy, pandas, polars), model constructing (statsmodels, sklearn, pytorch, gymnasium)."
   url: "https://www.python.org/"
+  categories: ["language"]
 
 - name: Linux
   logo: /images/sections/skills/linux.png
   summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
+  categories: ["cs"]
 
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
+  categories: ["cs"]
   url: "https://git-scm.com/"
 
 - name: C++
   logo: /images/sections/skills/c++.png
   summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
+  categories: ["language"]

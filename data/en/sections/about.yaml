@@ -19,14 +19,17 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a fourth year undergraduate student majoring in Finance at Nanjing University. I am very passionate about Quantitative Finance and have extensive quantitative internships including factor mining, CTA, and Crypto. I am familiar with Python, and proficient in ML and DL modeling using sklearn and Pytorch.'
+summary: 'I am a senior undergraduate student majoring in Finance at the Business School of Nanjing University. 
+My research interests include Quantitative Finance, Data Science, and Fin-Tech. 
+My experience has centered around Quantitative Research internships, involving factor mining, CTA strategies, and Crypto. 
+I am proficient in Python and skilled in ML and DL modeling with tools such as scikit-learn, PyTorch, and Gymnasium.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Email
   icon: "fas fa-envelope"
-  url: "zhhohoh27@outlook.com"
+  url: "zhhohoh27@gmail.com"
 
 - name: Github
   icon: "fab fa-github"
