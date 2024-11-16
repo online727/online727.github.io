@@ -1,12 +1,12 @@
 ---
 title: Combinatorial Analysis
-weight: 132
+weight: 232
 menu:
   notes:
     name: Combinatorial Analysis
     identifier: quant-greenbook-prob-2
     parent: quant-greenbook-prob
-    weight: 132
+    weight: 232
 ---
 
 <!-- Poker Hands -->

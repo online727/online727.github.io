@@ -7,7 +7,7 @@ menu:
     name: 第四章 多层感知机
     identifier: dltorch-ch4
     parent: dltorch
-    weight: 73
+    weight: 13
 author:
   name: Haohan Zhao
   image: /images/author/zhh.png

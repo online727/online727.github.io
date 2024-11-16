@@ -4,7 +4,7 @@ menu:
   notes:
     name: 测试笔记
     identifier: notes-example
-    weight: 10
+    weight: 1
 ---
 
 # 测试笔记

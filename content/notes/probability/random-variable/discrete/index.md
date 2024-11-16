@@ -1,12 +1,12 @@
 ---
 title: Discrete Random Variable
-weight: 3
+weight: 22
 menu:
   notes:
     name: Discrete Random Variable
     identifier: notes-randomvariable-discrete
     parent: notes-randomvariable
-    weight: 3
+    weight: 22
 ---
 
 <!-- Bernoulli -->

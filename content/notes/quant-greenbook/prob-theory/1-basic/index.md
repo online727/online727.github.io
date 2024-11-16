@@ -1,12 +1,12 @@
 ---
 title: Basic Definitions
-weight: 131
+weight: 231
 menu:
   notes:
     name: Basic Definitions
     identifier: quant-greenbook-prob-1
     parent: quant-greenbook-prob
-    weight: 131
+    weight: 231
 ---
 
 <!-- Coin Toss Game -->

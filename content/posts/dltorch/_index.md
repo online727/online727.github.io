@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Deep Learning (Pytorch)
     identifier: dltorch
-    weight: 70
+    weight: 10
 ---

@@ -7,7 +7,7 @@ menu:
     name: 多因子绩效归因
     identifier: perf-attri
     parent: multi-factors
-    weight: 50
+    weight: 102
 hero: images/boat.jpg
 tags:
 - 绩效归因

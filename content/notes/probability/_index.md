@@ -4,7 +4,7 @@ menu:
   notes:
     name: Probability Theory
     identifier: notes-prob
-    weight: 1
+    weight: 20
 ---
 
 # Probability Theory Notes

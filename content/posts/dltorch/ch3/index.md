@@ -7,7 +7,7 @@ menu:
     name: Chapter 3 Linear Regression
     identifier: dltorch-ch3
     parent: dltorch
-    weight: 72
+    weight: 12
 author:
   name: Haohan Zhao
   image: /images/author/zhh.png

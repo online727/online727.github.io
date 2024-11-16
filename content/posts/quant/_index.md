@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Quant
     identifier: quant
-    weight: 50
+    weight: 100
 ---

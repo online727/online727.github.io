@@ -7,7 +7,7 @@ menu:
     name: Chapter 4 Multilayer Perceptrons
     identifier: dltorch-ch4
     parent: dltorch
-    weight: 73
+    weight: 13
 author:
   name: Haohan Zhao
   image: /images/author/zhh.png

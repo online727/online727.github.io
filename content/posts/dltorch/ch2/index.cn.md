@@ -7,7 +7,7 @@ menu:
     name: 第二章 预备知识
     identifier: dltorch-ch2
     parent: dltorch
-    weight: 71
+    weight: 11
 author:
   name: 赵浩翰
   image: /images/author/zhh.png

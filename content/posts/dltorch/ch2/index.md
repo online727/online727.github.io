@@ -7,7 +7,7 @@ menu:
     name: Chapter 2 Preparation
     identifier: dltorch-ch2
     parent: dltorch
-    weight: 71
+    weight: 11
 author:
   name: Haohan Zhao
   image: /images/author/zhh.png

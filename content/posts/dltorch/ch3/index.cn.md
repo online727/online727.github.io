@@ -7,7 +7,7 @@ menu:
     name: 第三章 线性神经网络
     identifier: dltorch-ch3
     parent: dltorch
-    weight: 72
+    weight: 12
 author:
   name: 赵浩翰
   image: /images/author/zhh.png

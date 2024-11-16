@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: 深度学习 (Pytorch 版)
     identifier: dltorch
-    weight: 70
+    weight: 10
 ---

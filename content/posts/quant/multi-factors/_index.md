@@ -5,5 +5,5 @@ menu:
     name: Multi-Factors Model
     identifier: multi-factors
     parent: quant
-    weight: 50
+    weight: 101
 ---

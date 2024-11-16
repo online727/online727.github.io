@@ -5,5 +5,5 @@ menu:
     name: 多因子模型
     identifier: multi-factors
     parent: quant
-    weight: 50
+    weight: 101
 ---
