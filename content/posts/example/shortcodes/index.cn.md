@@ -8,6 +8,6 @@ menu:
     identifier: shortcodes
     parent: example
     weight: 7
-hero: boat.jpg
+hero: images/boat.jpg
 mermaid: true
 ---

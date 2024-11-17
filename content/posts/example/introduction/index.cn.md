@@ -8,6 +8,7 @@ menu:
     identifier: introduction
     parent: example
     weight: 2
+hero: images/hero1.svg
 tags: ["Basic", "Multi-lingual"]
 categories: ["Basic"]
 ---

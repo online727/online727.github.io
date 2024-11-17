@@ -8,6 +8,7 @@ menu:
     identifier: markdown
     parent: example
     weight: 6
+hero: images/hero2.svg
 author:
   name: 赵浩翰
   image: /images/author/zhh.png
