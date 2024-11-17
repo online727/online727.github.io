@@ -10,9 +10,8 @@ menu:
     weight: 102
 hero: images/boat.jpg
 tags:
-- Markdown
-- Content Organization
-- Multi-lingual
+- Performance Attribution
+- Multi-Factors Model
 categories:
 - Basic
 ---

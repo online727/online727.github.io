@@ -10,8 +10,8 @@ menu:
     weight: 102
 hero: images/boat.jpg
 tags:
-- 绩效归因
-- 多因子模型
+- Performance Attribution
+- Multi-Factors Model
 math: true
 ---
 
