@@ -1,4 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Haohan's Blog</title><link>https://online727.github.io/posts/</link><description>Recent content in Posts on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 13 Aug 2024 22:02:00 +0800</lastBuildDate><atom:link href="https://online727.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Chapter 4 Multilayer Perceptrons</title><link>https://online727.github.io/posts/dltorch/ch4/</link><pubDate>Tue, 13 Aug 2024 22:02:00 +0800</pubDate><guid>https://online727.github.io/posts/dltorch/ch4/</guid><description>&lt;p>English incoming, see Chinese&amp;hellip;&lt;/p></description></item><item><title>Chapter 2 Preparation</title><link>https://online727.github.io/posts/dltorch/ch2/</link><pubDate>Sun, 28 Jul 2024 21:57:00 +0800</pubDate><guid>https://online727.github.io/posts/dltorch/ch2/</guid><description>&lt;p>English incoming, see Chinese&amp;hellip;&lt;/p></description></item><item><title>Chapter 3 Linear Regression</title><link>https://online727.github.io/posts/dltorch/ch3/</link><pubDate>Sun, 28 Jul 2024 21:57:00 +0800</pubDate><guid>https://online727.github.io/posts/dltorch/ch3/</guid><description>&lt;p>English incoming, see Chinese&amp;hellip;&lt;/p></description></item><item><title>Performance Attribution</title><link>https://online727.github.io/posts/quant/multi-factors/perf-attri/</link><pubDate>Tue, 23 Jul 2024 23:36:25 +0800</pubDate><guid>https://online727.github.io/posts/quant/multi-factors/perf-attri/</guid><description>&lt;p>Incoming&amp;hellip;&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Haohan's Blog</title><link>https://online727.github.io/posts/</link><description>Recent content in Posts on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 17 Nov 2024 14:45:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Linear Regression</title><link>https://online727.github.io/posts/linear_models/lr/</link><pubDate>Sun, 17 Nov 2024 14:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr/</guid><description>&lt;h2 id="01-general-expression">0.1 General Expression&lt;/h2>
+&lt;p>$$y_{i}=\beta_{0}+\beta_{1}\times x_{i1}+\cdots+\beta_{p}\times x_{ip}+\epsilon_{i},\quad i=1,2,\cdots,n$$
+$$
+\begin{align*}
+\mathbf{y}&amp;amp;=(y_{1},y_{2},\cdots,y_{n})^{T} \cr
+\mathbf{X}&amp;amp;=\begin{bmatrix}1 &amp;amp; x_{11} &amp;amp; x_{12} &amp;amp; \cdots &amp;amp; x_{1p} \cr 1 &amp;amp; x_{21} &amp;amp; x_{22} &amp;amp; \cdots &amp;amp; x_{2p} \cr \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots \cr 1 &amp;amp; x_{n1} &amp;amp; x_{n2} &amp;amp; \cdots &amp;amp; x_{np} \end{bmatrix} \cr
+\mathbf{\beta}&amp;amp;=(\beta_{0},\beta_{1},\cdots,\beta_{p})^{T} \cr
+\mathbf{\epsilon}&amp;amp;=(\epsilon_{1}, \epsilon_{2},\cdots,\epsilon_{n})^{T}
+\end{align*}
+$$&lt;/p>
+&lt;h2 id="02-ols-assumptions">0.2 OLS Assumptions&lt;/h2>
+&lt;ul>
+&lt;li>The regression model is parametric linear.&lt;/li>
+&lt;li>${x_{i1},x_{i2},\cdots,x_{ip}}$ are nonstochastic variables.&lt;/li>
+&lt;li>$E(\epsilon_{i})=0$.&lt;/li>
+&lt;li>$Var(\epsilon_{i})=\sigma^{2}$.&lt;/li>
+&lt;li>${\epsilon_{i}}$ are independent random variables, so as to say: no autocorrelation, $cov(\epsilon_{i},\epsilon_{j})=0,i\neq j$.&lt;/li>
+&lt;li>The regression model is set correctly, without setting bias.&lt;/li>
+&lt;/ul>
+&lt;h2 id="03-ols-estimators">0.3 OLS Estimators&lt;/h2>
+&lt;h3 id="031--estimators-of-hatbeta">0.3.1 Estimators of $\hat{\beta}$&lt;/h3>
+&lt;p>Formally, the OLS estimator of $\beta$ is defined by the minimizer of the &lt;strong>residual sum of squares (RSS)&lt;/strong>:
+$$\hat{\mathbf{\beta}}=arg\ min_{\beta}\ S(\mathbf{\beta})$$
+$$S(\mathbf{\beta})=(\mathbf{y}-\mathbf{X\beta})^{T}(\mathbf{y}-\mathbf{X\beta})=\sum\limits_{i=1}^{n}(y_{i}-\beta_{0}-\beta_{1}\times x_{i1}-\cdots-\beta_{p}\times x_{ip})^{2}$$
+Derive it we can get:
+$$\hat{\mathbf{\beta}}=(\mathbf{X^{T}X})^{-1}\mathbf{X^{T}y}$$&lt;/p></description></item><item><title>Chapter 4 Multilayer Perceptrons</title><link>https://online727.github.io/posts/dltorch/ch4/</link><pubDate>Tue, 13 Aug 2024 22:02:00 +0800</pubDate><guid>https://online727.github.io/posts/dltorch/ch4/</guid><description>&lt;p>English incoming, see Chinese.&lt;/p></description></item><item><title>Chapter 2 Preparation</title><link>https://online727.github.io/posts/dltorch/ch2/</link><pubDate>Sun, 28 Jul 2024 21:57:00 +0800</pubDate><guid>https://online727.github.io/posts/dltorch/ch2/</guid><description>&lt;p>English incoming, see Chinese.&lt;/p></description></item><item><title>Chapter 3 Linear Regression</title><link>https://online727.github.io/posts/dltorch/ch3/</link><pubDate>Sun, 28 Jul 2024 21:57:00 +0800</pubDate><guid>https://online727.github.io/posts/dltorch/ch3/</guid><description>&lt;p>English incoming, see Chinese.&lt;/p></description></item><item><title>Performance Attribution</title><link>https://online727.github.io/posts/quant/multi-factors/perf-attri/</link><pubDate>Tue, 23 Jul 2024 23:36:25 +0800</pubDate><guid>https://online727.github.io/posts/quant/multi-factors/perf-attri/</guid><description>&lt;p>Incoming&amp;hellip;&lt;/p>
 &lt;p>See Chinese.&lt;/p></description></item><item><title>Introduction</title><link>https://online727.github.io/posts/example/introduction/</link><pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate><guid>https://online727.github.io/posts/example/introduction/</guid><description>&lt;p>Greeting! This is an introduction post. This post tests the followings:&lt;/p>
 &lt;ul>
 &lt;li>Hero image is in the same directory as the post.&lt;/li>
@@ -111,4 +136,4 @@ width="500"
 height="200"
 style="float: right;"
 >
-&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.&lt;/p></description></item><item><title>পোস্ট সমূহ</title><link>https://online727.github.io/posts/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://online727.github.io/posts/_index.bn/</guid><description/></item></channel></rss>
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas lectus sed leo ultricies ultricies. Praesent tellus risus, eleifend vel efficitur ac, venenatis sit amet sem. Ut ut egestas erat. Fusce ut leo turpis. Morbi consectetur sed lacus vitae vehicula. Cras gravida turpis id eleifend volutpat. Suspendisse nec ipsum eu erat finibus dictum. Morbi volutpat nulla purus, vel maximus ex molestie id. Nullam posuere est urna, at fringilla eros venenatis quis.&lt;/p></description></item></channel></rss>
