@@ -12,9 +12,9 @@ author:
   name: Haohan Zhao
   image: /images/author/zhh.png
 tags:
-- DeepLearning
+- Deep Learning
 - Pytorch
 math: true
 ---
 
-English incoming, see Chinese...
+English incoming, see Chinese.

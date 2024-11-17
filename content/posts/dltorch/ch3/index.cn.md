@@ -12,9 +12,9 @@ author:
   name: 赵浩翰
   image: /images/author/zhh.png
 tags:
-- DeepLearning
+- Deep Learning
 - Pytorch
-- LinearRegression
+- Linear Regression
 - SoftMax
 math: true
 ---

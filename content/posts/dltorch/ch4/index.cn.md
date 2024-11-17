@@ -12,7 +12,7 @@ author:
   name: Haohan Zhao
   image: /images/author/zhh.png
 tags:
-- DeepLearning
+- Deep Learning
 - Pytorch
 - MLP
 - Normalization
