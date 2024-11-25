@@ -8,6 +8,7 @@ menu:
     identifier: dltorch-ch3
     parent: dltorch
     weight: 12
+hero: /images/sunset.jpg
 author:
   name: Haohan Zhao
   image: /images/author/zhh.png

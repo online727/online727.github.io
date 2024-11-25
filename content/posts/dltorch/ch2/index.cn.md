@@ -8,6 +8,7 @@ menu:
     identifier: dltorch-ch2
     parent: dltorch
     weight: 11
+hero: /images/sunset.jpg
 author:
   name: 赵浩翰
   image: /images/author/zhh.png
