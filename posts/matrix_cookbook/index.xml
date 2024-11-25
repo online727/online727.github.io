@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Matrix Cookbook on Haohan's Blog</title><link>https://online727.github.io/posts/matrix_cookbook/</link><description>Recent content in Matrix Cookbook on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 25 Nov 2024 20:10:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/posts/matrix_cookbook/index.xml" rel="self" type="application/rss+xml"/><item><title>Basics</title><link>https://online727.github.io/posts/matrix_cookbook/basic/basic_content/</link><pubDate>Mon, 25 Nov 2024 20:10:25 +0800</pubDate><guid>https://online727.github.io/posts/matrix_cookbook/basic/basic_content/</guid><description>&lt;h2 id="01-basic-content">0.1 Basic Content&lt;/h2>
+&lt;p>$$
+\begin{align}
+(\boldsymbol{AB})^{-1} &amp;amp;= \boldsymbol{B}^{-1}\boldsymbol{A}^{-1} \cr
+(\boldsymbol{ABC\cdots})^{-1} &amp;amp;= \cdots\boldsymbol{C}^{-1}\boldsymbol{B}^{-1}\boldsymbol{A}^{-1} \cr
+(\boldsymbol{A}^\top)^{-1} &amp;amp;= (A^{-1})^\top \cr
+(\boldsymbol{A} + \boldsymbol{B})^\top &amp;amp;= \boldsymbol{A}^\top + \boldsymbol{B}^\top \cr
+(\boldsymbol{AB})^\top &amp;amp;= \boldsymbol{B}^\top\boldsymbol{A}^\top \cr
+(\boldsymbol{ABC\cdots})^\top &amp;amp;= \cdots\boldsymbol{C}^\top\boldsymbol{B}^\top\boldsymbol{A}^\top \cr
+(\boldsymbol{A}^{H})^{-1} &amp;amp;= (\boldsymbol{A}^{-1})^{H} \cr
+(\boldsymbol{A} + \boldsymbol{B})^H &amp;amp;= \boldsymbol{A}^H + \boldsymbol{B}^H \cr
+(\boldsymbol{AB})^H &amp;amp;= \boldsymbol{B}^H\boldsymbol{A}^H \cr
+(\boldsymbol{ABC\cdots})^H &amp;amp;= \cdots\boldsymbol{C}^H\boldsymbol{B}^H\boldsymbol{A}^H
+\end{align}
+$$&lt;/p>
+&lt;h2 id="02-trace">0.2 Trace&lt;/h2>
+&lt;p>$$
+\begin{align}
+\text{TR}(\boldsymbol{A}) &amp;amp;= \sum_{i}A_{ii} \cr
+\text{TR}(\boldsymbol{A}) &amp;amp;= \sum_{i}\lambda_{i}, \quad \lambda_{i}=\text{eig}(\boldsymbol{A})_{i} \cr
+\text{TR}(\boldsymbol{A}) &amp;amp;= \text{TR}(\boldsymbol{A}^\top) \cr
+\text{TR}(\boldsymbol{AB}) &amp;amp;= \text{TR}(\boldsymbol{BA}) \cr
+\text{TR}(\boldsymbol{A+B}) &amp;amp;= \text{TR}(\boldsymbol{A}) + \text{TR}(\boldsymbol{B}) \cr
+\text{TR}(\boldsymbol{ABC}) &amp;amp;= \text{TR}(\boldsymbol{BCA}) = \text{TR}(\boldsymbol{CAB}) \cr
+\boldsymbol{a}^\top\boldsymbol{a} &amp;amp;= \text{Tr}(\boldsymbol{aa}^\top)
+\end{align}
+$$&lt;/p></description></item><item><title>Notations</title><link>https://online727.github.io/posts/matrix_cookbook/basic/notations/</link><pubDate>Mon, 25 Nov 2024 20:10:25 +0800</pubDate><guid>https://online727.github.io/posts/matrix_cookbook/basic/notations/</guid><description>&lt;p>With reference to &lt;a href="http://www2.imm.dtu.dk/pubdb/edoc/imm3274.pdf" target="_blank" rel="noopener">The Matrix Cookbook&lt;/a>&lt;/p>
+&lt;h2 id="01-notation-and-nomenclature">0.1 Notation and Nomenclature&lt;/h2>
+&lt;div class="row">
+&lt;div class="col col-sm-12 col-lg-3">
+&lt;h3 id="notations">Notations&lt;/h3>
+&lt;p>$\boldsymbol{A}$&lt;/p>
+&lt;p>$\boldsymbol{A}_{ij}$&lt;/p>
+&lt;p>$\boldsymbol{A}_i$&lt;/p>
+&lt;p>$\boldsymbol{A}^{ij}$&lt;/p>
+&lt;p>$\boldsymbol{A}^{n}$&lt;/p>
+&lt;p>$\boldsymbol{A}^{-1}$&lt;/p>
+&lt;p>$\boldsymbol{A}^{+}$&lt;/p>
+&lt;p>$\boldsymbol{A}^{1/2}$&lt;/p>
+&lt;p>$(\boldsymbol{A})_{ij}$&lt;/p>
+&lt;p>$\boldsymbol{A}_{ij}$&lt;/p>
+&lt;p>$[\boldsymbol{A}]_{ij}$&lt;/p>
+&lt;p>$\boldsymbol{a}$&lt;/p>
+&lt;p>$\boldsymbol{a}_i$&lt;/p>
+&lt;p>$a_i$&lt;/p>
+&lt;p>$a$&lt;/p>
+&lt;p>$\mathfrak{R}z$&lt;/p>
+&lt;p>$\mathfrak{R}\boldsymbol{z}$&lt;/p>
+&lt;p>$\mathfrak{R}\boldsymbol{Z}$&lt;/p>
+&lt;p>$\mathfrak{F}z$&lt;/p>
+&lt;p>$\mathfrak{F}\boldsymbol{z}$&lt;/p>
+&lt;p>$\mathfrak{F}\boldsymbol{Z}$&lt;/p>
+&lt;p>$\det(\boldsymbol{A})$&lt;/p>
+&lt;p>$\text{Tr}(\boldsymbol{A})$&lt;/p>
+&lt;p>$\text{diag}(\boldsymbol{A})$&lt;/p>
+&lt;p>$\text{eig}(\boldsymbol{A})$&lt;/p>
+&lt;p>$\text{vec}(\boldsymbol{A})$&lt;/p>
+&lt;p>$\text{sup}$&lt;/p>
+&lt;p>$||\boldsymbol{A}||$&lt;/p>
+&lt;p>$\boldsymbol{A}^\top$&lt;/p>
+&lt;p>$\boldsymbol{A}^{-\top}$&lt;/p>
+&lt;p>$\boldsymbol{A}^{*}$&lt;/p>
+&lt;p>$\boldsymbol{A}^H$&lt;/p>
+&lt;p>$\boldsymbol{A}\circ\boldsymbol{B}$&lt;/p>
+&lt;p>$\boldsymbol{A}\otimes\boldsymbol{B}$&lt;/p>
+&lt;p>$\boldsymbol{0}$&lt;/p>
+&lt;p>$\boldsymbol{I}$&lt;/p>
+&lt;p>$\boldsymbol{J}^{ij}$&lt;/p>
+&lt;p>$\boldsymbol{\Sigma}$&lt;/p>
+&lt;p>$\boldsymbol{\Lambda}$&lt;/p>
+&lt;/div>
+&lt;div class="col col-sm-12 col-lg-9">
+&lt;h3 id="nomenclature">Nomenclature&lt;/h3>
+&lt;p>Matrix&lt;/p>
+&lt;p>Matrix indexed for some purpose&lt;/p>
+&lt;p>Matrix indexed for some purpose&lt;/p>
+&lt;p>Matrix indexed for some purpose&lt;/p></description></item></channel></rss>
