@@ -1,10 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quant on Haohan's Blog</title><link>https://online727.github.io/tags/quant/</link><description>Recent content in Quant on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 16 Nov 2024 11:45:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/tags/quant/index.xml" rel="self" type="application/rss+xml"/><item><title>Questions of Coefficients</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_coefficients/</link><pubDate>Sat, 16 Nov 2024 11:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_coefficients/</guid><description>&lt;h3 id="01-product-of-beta">0.1 Product of $\beta$&lt;/h3>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quant on Haohan's Blog</title><link>https://online727.github.io/tags/quant/</link><description>Recent content in Quant on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 26 Nov 2024 14:00:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/tags/quant/index.xml" rel="self" type="application/rss+xml"/><item><title>Questions of R Square</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_r2/</link><pubDate>Tue, 26 Nov 2024 14:00:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_r2/</guid><description>&lt;ol>
+&lt;li>$y\sim(1,\boldsymbol{x})$, regress $y$ on $x$ with intercept.&lt;/li>
+&lt;li>$y\sim(\boldsymbol{x})$, regress $y$ on $x$ without intercept.&lt;/li>
+&lt;li>In the context of Statistics, SSE (Sum of Squares due to Error) and SSR (Sum of Squares due to Regression) are used more frequently. But in Economitrics, ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) are prefered.&lt;/li>
+&lt;/ol>
+&lt;h3 id="01-definition">0.1 Definition&lt;/h3>
+&lt;p>$$
+R^2 = \frac{SSR}{SST} = \frac{||\hat{Y} - \overline{Y}||^2}{||Y - \overline{Y}||^2} = 1 - \frac{SSE}{SST} = 1 - \frac{||\hat{\epsilon}||^2}{||Y - \overline{Y}||^2}
+$$&lt;/p></description></item><item><title>Questions of Assumptions</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_assumptions/</link><pubDate>Tue, 26 Nov 2024 12:00:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_assumptions/</guid><description>&lt;ol>
+&lt;li>$y\sim(1,\boldsymbol{x})$, regress $y$ on $x$ with intercept.&lt;/li>
+&lt;li>$y\sim(\boldsymbol{x})$, regress $y$ on $x$ without intercept.&lt;/li>
+&lt;li>In the context of Statistics, SSE (Sum of Squares due to Error) and SSR (Sum of Squares due to Regression) are used more frequently. But in Economitrics, ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) are prefered.&lt;/li>
+&lt;/ol>
+&lt;h3 id="01-heteroskedasticity-and-autocorrelation">0.1 Heteroskedasticity and Autocorrelation&lt;/h3>
+&lt;p>If the residuals ($\epsilon$) in a linear regression model exhibit heteroskedasticity (non-constant variance) or autocorrelation (correlation between residuals across observations), how will it impact the estimation and inference of $\beta$? How to test and solve these problems?&lt;/p></description></item><item><title>Questions of Coefficients</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_coefficients/</link><pubDate>Sat, 16 Nov 2024 11:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_coefficients/</guid><description>&lt;ol>
+&lt;li>$y\sim(1,\boldsymbol{x})$, regress $y$ on $x$ with intercept.&lt;/li>
+&lt;li>$y\sim(\boldsymbol{x})$, regress $y$ on $x$ without intercept.&lt;/li>
+&lt;li>In the context of Statistics, SSE (Sum of Squares due to Error) and SSR (Sum of Squares due to Regression) are used more frequently. But in Economitrics, ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) are prefered.&lt;/li>
+&lt;/ol>
+&lt;h3 id="01-product-of-beta">0.1 Product of $\beta$&lt;/h3>
 &lt;p>Denote $\beta_1$ as the least squares optimal solution of $y=\beta x+\epsilon$, $\beta_2$ as the least squares optimal solution of $x=\beta y+\epsilon$. Find the min and max values of $\beta_1\beta_2$.
 $$
 \beta_1 = \frac{Cov(X,Y)}{Var(X)},\quad \beta_2 = \frac{Cov(X,Y)}{Var(Y)}\Rightarrow \beta_1\beta_2 = \rho_{XY}^2 \in [-1,1]
-$$&lt;/p>
-&lt;h3 id="02-load-memory">0.2 Load Memory&lt;/h3>
-&lt;p>When performing linear regression, if the dataset is too large to fit into memory at once, how can this issue be resolved?&lt;/p></description></item><item><title>Questions of Conceptions</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_conceptions/</link><pubDate>Sat, 16 Nov 2024 11:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_conceptions/</guid><description>&lt;p>With reference to &lt;a href="https://zhuanlan.zhihu.com/p/443658898" target="_blank" rel="noopener">donggua&lt;/a>.&lt;/p>
+$$&lt;/p></description></item><item><title>Questions of Conceptions</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_conceptions/</link><pubDate>Sat, 16 Nov 2024 11:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_conceptions/</guid><description>&lt;p>With reference to &lt;a href="https://zhuanlan.zhihu.com/p/443658898" target="_blank" rel="noopener">donggua&lt;/a>.&lt;/p>
 &lt;p>I complete the answers of these questions.&lt;/p>
 &lt;h2 id="01-notations">0.1 Notations&lt;/h2>
 &lt;ol>
