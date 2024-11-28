@@ -17,6 +17,10 @@ categories:
 - Basic
 ---
 
+1. $y\sim(1,\boldsymbol{x})$, regress $y$ on $x$ with intercept.
+2. $y\sim(\boldsymbol{x})$, regress $y$ on $x$ without intercept.
+3. In the context of Statistics, SSE (Sum of Squares due to Error) and SSR (Sum of Squares due to Regression) are used more frequently. But in Economitrics, ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) are prefered.
+
 ### 0.1 Product of $\beta$
 Denote $\beta_1$ as the least squares optimal solution of $y=\beta x+\epsilon$, $\beta_2$ as the least squares optimal solution of $x=\beta y+\epsilon$. Find the min and max values of $\beta_1\beta_2$.
 $$
