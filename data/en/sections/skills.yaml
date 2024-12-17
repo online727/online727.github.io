@@ -6,6 +6,7 @@ section:
   weight: 5
   showOnNavbar: true
   filter: true
+  filter: true
   # Can optionally hide the title in sections
   # hideTitle: true
 
