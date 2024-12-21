@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips on Haohan's Blog</title><link>https://online727.github.io/posts/tips/</link><description>Recent content in Tips on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Dec 2024 00:15:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/posts/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>Install Easyconnect in Ubuntu</title><link>https://online727.github.io/posts/tips/ubuntu/easyconnect/</link><pubDate>Tue, 03 Dec 2024 00:15:25 +0800</pubDate><guid>https://online727.github.io/posts/tips/ubuntu/easyconnect/</guid><description>&lt;h2 id="01-download-deb-file">0.1 Download &lt;code>.deb&lt;/code> File&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips on Haohan's Blog</title><link>https://online727.github.io/posts/tips/</link><description>Recent content in Tips on Haohan's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Dec 2024 22:54:25 +0800</lastBuildDate><atom:link href="https://online727.github.io/posts/tips/index.xml" rel="self" type="application/rss+xml"/><item><title>SFTP Connect Remote Server</title><link>https://online727.github.io/posts/tips/sftp/</link><pubDate>Tue, 17 Dec 2024 22:54:25 +0800</pubDate><guid>https://online727.github.io/posts/tips/sftp/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>sftp username&lt;span style="color:#a6e22e">@remote_url&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># input password&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd &lt;span style="color:#75715e"># to a directory&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ls &lt;span style="color:#75715e"># list the files in that dir&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>put filename &lt;span style="color:#75715e"># upload &amp;#34;filename&amp;#34; in local to remote server&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># or&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>put path&lt;span style="color:#f92672">/&lt;/span>your_file &lt;span style="color:#75715e"># the path of your local file&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Vscode remote ssh</title><link>https://online727.github.io/posts/tips/ubuntu/vscode/</link><pubDate>Tue, 17 Dec 2024 22:54:25 +0800</pubDate><guid>https://online727.github.io/posts/tips/ubuntu/vscode/</guid><description>&lt;h2 id="01-install-plugin">0.1 Install plugin&lt;/h2>
+&lt;p>Search for &lt;code>Remote-SSH&lt;/code> in the plugins store, and install it.&lt;/p>
+&lt;h2 id="02-edit-config">0.2 Edit &lt;code>.config&lt;/code>&lt;/h2>
+&lt;p>Open the &lt;code>.config&lt;/code> file.&lt;/p>
+&lt;p>In Windows, the path of this file maybe: &lt;code>C:\user\username\.ssh\.config&lt;/code>.&lt;/p>
+&lt;p>In Ubuntu, the path of this file maybe: &lt;code>/home/username/.ssh/.config&lt;/code>.&lt;/p>
+&lt;p>You can also find the file via &lt;code>Remote-SSH&lt;/code> plugin in vscode, as the picture below:&lt;/p>
+&lt;img src="https://online727.github.io/posts/tips/ubuntu/vscode/config.png"
+alt="Edit Config"
+class="center"
+>
+&lt;div style="margin-top: 2rem;">&lt;/div>
+&lt;p>Edit it in vscode:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>Host alias &lt;span style="color:#75715e"># customize the name of your remote server&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> HostName hostname &lt;span style="color:#75715e"># server ip&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> User user &lt;span style="color:#75715e"># username&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> IdentityFile ~/.ssh/id_rsa# the rsa secrete key &lt;span style="color:#66d9ef">if&lt;/span> you want to log in the server without password, see section 0.3
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then you can see the remote server under &lt;code>SSH&lt;/code> of picture 1, click it and connect to your server.&lt;/p></description></item><item><title>Install Easyconnect in Ubuntu</title><link>https://online727.github.io/posts/tips/ubuntu/easyconnect/</link><pubDate>Tue, 03 Dec 2024 00:15:25 +0800</pubDate><guid>https://online727.github.io/posts/tips/ubuntu/easyconnect/</guid><description>&lt;h2 id="01-download-deb-file">0.1 Download &lt;code>.deb&lt;/code> File&lt;/h2>
 &lt;p>Downloading address: &lt;a href="https://software.openkylin.top/openkylin/yangtze/pool/all/" target="_blank" rel="noopener">https://software.openkylin.top/openkylin/yangtze/pool/all/&lt;/a>, search for &lt;code>easyconnect&lt;/code> on that page and download &lt;code>easyconnect_7.6.7.3.0_amd64.deb&lt;/code>.&lt;/p>
 &lt;h2 id="02-install">0.2 Install&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo dpkg --install easyconnect_7.6.7.3.0_amd64.deb
