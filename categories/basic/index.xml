@@ -32,7 +32,13 @@ class="center"
 &lt;p>Error info: the verison is not match with the server, please upgrade&amp;hellip;&lt;/p>
 &lt;h3 id="032-solving-methods">0.3.2 Solving Methods&lt;/h3>
 &lt;h4 id="0321-method-1">0.3.2.1 Method 1&lt;/h4>
-&lt;p>Delete &lt;code>/usr/share/sangfor/EasyConnect/resources/conf/pkg_version.xml&lt;/code>&lt;/p></description></item><item><title>Questions of R Square</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_r2/</link><pubDate>Tue, 26 Nov 2024 14:00:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_r2/</guid><description>&lt;ol>
+&lt;p>Delete &lt;code>/usr/share/sangfor/EasyConnect/resources/conf/pkg_version.xml&lt;/code>&lt;/p></description></item><item><title>Questions of R Square and Corr Coef</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_r2rho/</link><pubDate>Tue, 26 Nov 2024 17:00:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_r2rho/</guid><description>&lt;ol>
+&lt;li>$y\sim(1,\boldsymbol{x})$, regress $y$ on $x$ with intercept.&lt;/li>
+&lt;li>$y\sim(\boldsymbol{x})$, regress $y$ on $x$ without intercept.&lt;/li>
+&lt;li>In the context of Statistics, SSE (Sum of Squares due to Error) and SSR (Sum of Squares due to Regression) are used more frequently. But in Economitrics, ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) are prefered.&lt;/li>
+&lt;/ol>
+&lt;h3 id="01-bivariate-regression">0.1 Bivariate Regression&lt;/h3>
+&lt;p>Denote the $R^2$ of $y\sim(1,x_1)$ as $R_1^2$, $y\sim(1,x_2)$ as $R_2^2$, $y\sim(1,x_1,x_2)$ as $R_3^2$. And we have $corr(x_1,x_2)=\rho$.&lt;/p></description></item><item><title>Questions of R Square</title><link>https://online727.github.io/posts/linear_models/lr_quant/lr_r2/</link><pubDate>Tue, 26 Nov 2024 14:00:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_quant/lr_r2/</guid><description>&lt;ol>
 &lt;li>$y\sim(1,\boldsymbol{x})$, regress $y$ on $x$ with intercept.&lt;/li>
 &lt;li>$y\sim(\boldsymbol{x})$, regress $y$ on $x$ without intercept.&lt;/li>
 &lt;li>In the context of Statistics, SSE (Sum of Squares due to Error) and SSR (Sum of Squares due to Regression) are used more frequently. But in Economitrics, ESS (Explained Sum of Squares) and RSS (Residual Sum of Squares) are prefered.&lt;/li>
@@ -122,7 +128,14 @@ $$&lt;/p></description></item><item><title>Notations</title><link>https://online
 &lt;p>Matrix&lt;/p>
 &lt;p>Matrix indexed for some purpose&lt;/p>
 &lt;p>Matrix indexed for some purpose&lt;/p>
-&lt;p>Matrix indexed for some purpose&lt;/p></description></item><item><title>Linear Regression</title><link>https://online727.github.io/posts/linear_models/lr/</link><pubDate>Sun, 17 Nov 2024 14:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr/</guid><description>&lt;h2 id="01-general-expression">0.1 General Expression&lt;/h2>
+&lt;p>Matrix indexed for some purpose&lt;/p></description></item><item><title>Linear Regression and Stats</title><link>https://online727.github.io/posts/linear_models/lr_stats/</link><pubDate>Sun, 17 Nov 2024 15:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr_stats/</guid><description>&lt;p>This post focuses on &lt;strong>Ordinary Linear Regression&lt;/strong>.&lt;/p>
+&lt;h2 id="01-simple-linear-regression">0.1 Simple Linear Regression&lt;/h2>
+&lt;p>The most basic version of a linear model is &lt;strong>Simple Linear Regression&lt;/strong>, which can be expressed by this formular:
+$$
+y = \alpha + \beta \times x + \epsilon
+$$
+where $\alpha$ is called &lt;strong>intercept&lt;/strong>, $\beta$ is called &lt;strong>slope&lt;/strong>, and $\epsilon$ is called &lt;strong>residual&lt;/strong>.&lt;/p>
+&lt;p>The coefficients of &lt;strong>Simple Linear Regression&lt;/strong> can be solved using &lt;strong>Least Squres Method&lt;/strong>, by minimizing $\sum_{i=1}^{n}(y_i-\hat{y}_i)^2$.&lt;/p></description></item><item><title>Linear Regression</title><link>https://online727.github.io/posts/linear_models/lr/</link><pubDate>Sun, 17 Nov 2024 14:45:25 +0800</pubDate><guid>https://online727.github.io/posts/linear_models/lr/</guid><description>&lt;h2 id="01-general-expression">0.1 General Expression&lt;/h2>
 &lt;p>$$y_{i}=\beta_{0}+\beta_{1}\times x_{i1}+\cdots+\beta_{p}\times x_{ip}+\epsilon_{i},\quad i=1,2,\cdots,n$$
 $$
 \begin{align*}
